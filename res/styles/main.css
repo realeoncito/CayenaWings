@@ -171,3 +171,84 @@ img{
         flex-direction: row;
     }
 }
+
+/* Index only */
+.IndexMain{
+    background-image: url(../fondos/morado-blanco-scaled.jpg);
+}
+
+.heroBanner{
+    width: 100%;
+    height: 600px;
+}
+
+.heroBanner img{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 128px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.blackCover{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 128px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.5;
+    background-color: black;
+}
+
+.heroBannerInfo{
+    height: min-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px;
+    color: white;
+    gap: 20px;
+    position: absolute;
+    top: 128px;
+    right: 0;
+    width: 36%;
+}
+
+.heroBannerInfo h2{
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.heroBannerInfo p{
+    z-index: 3;
+    width: 100%;
+    font-size: 24px;
+    opacity: 0.7;
+    line-height: 1.5;  
+}
+
+.IndexBoton{
+    padding: 15px 50px;
+    z-index: 3;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    font-style: normal;
+}
+
+
+@media (min-width: 710px) {
+    .heroBannerInfo h2{
+        font-size: 70px;
+    }
+}
+
