@@ -6,44 +6,59 @@ Seccion del sitio web en el que se colocaran la opinion de clientes satisfechos 
 <html>
 
     <head>
+        <link rel="icon" type="image/x-icon" href="res/icon.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="res/styles/main.css"/>
+        <link rel="stylesheet" href="res/styles/colors.css"/>
         <title>Cayena Wings - Testimonios</title>
     </head>
 
     <body>
-        <header class="Header">
-            <!--Agregar referencia al logo salmon-->
-            <img src="res/logos/--Pagina" alt="Logo Cayena"/>
-            <h1 class="TituloHeader">Cayena</h1>
-            <div class="Menu">
-                <nav>
-                    <ul>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="conocenos.html">Conócenos</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        
-                    </ul>
-                </nav>
-            </div>
+        <header class="Back-Black">
+            <!--Se deja el logo dentro del nav porque llevara a la pagina principal.-->
+            <nav>
+                <a href="index.html">
+                    <img class="logo" src="res/logos/negro-salmon.jpg" alt="Logo Cayena Salmon"/>
+                    <h1 class="Color-WhiteSmoke">Cayena Wings</h1>
+                </a>
+
+                <ul>
+                    <li><a href="menu.html" class="HeaderMenu Color-WhiteSmoke">Menu</a></li>
+                    <li><a href="testimonios.html" class="HeaderTestimonios Color-Salmon">Testimonios</a></li>
+                    <li><a href="conocenos.html" class="HeaderAcerca Color-WhiteSmoke">Acerca de Nosotros</a></li>
+                    <li><a  class="HeaderFormar Back-Salmon Color-WhiteSmoke">Formar Parte</a></li>
+                    
+                </ul>
+            </nav>
 
         </header>
 
-        <main>
+        <main style="height: 90vh;background-image: url(res/fondos/blanco-salmon.jpg);">
+
             <section class="heroPanel">
-                <div class="TestimonioPrincipal">
-                    <h2 class="TituloPrincipal">Testimonios</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad placeat maiores! At labore dicta, magnam nesciunt sapiente quia distinctio delectus et, perferendis nulla molestias!</p>
-                    <div class="NombreTestimonio">
-                        <img src="res/logos/--Agregar" alt="fotografia Samuel Alejandro">
-                        <p class="NombreTestimonio">Baby Gravy</p>
-                        <p>@_callmegravy</p>
+                <div class="Container">
+                    <img src="res/fondos/blanco-salmon.jpg" alt="fondo blanco y salmon"/>
+                    <div id="FondoBlanco" class="Contenido">
+                        <h2>Testimonios</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt fugiat non reiciendis earum excepturi soluta iste sed dolorum, aut voluptates expedita nulla, aperiam omnis!</p>
+                        <div class="NombrePie">
+                            <img src="https://placehold.co/48x48" alt="foto de cliente">
+                            <span>
+                                <h3>Baby Gravy</h3>
+                                <p>@_callmegravy</p>
+                            </span>
+                            
+                        </div>
                     </div>
                 </div>
+                
             </section>
+
 
             <section class="TestimoniosExtra">
                 <!--Se necesitaran grillas para acomodar el contenido de manera adecuada-->
+                <!--
                 <section class="Testimonios">
                     <div class="Tarjeta">
                         <span class="TituloTarjeta">
@@ -55,14 +70,55 @@ Seccion del sitio web en el que se colocaran la opinion de clientes satisfechos 
                         
                     </div>
                 </section>
+                -->
 
             </section>
 
 
         </main>
 
-        <footer class="Footer">
-            <div></div>
+        <footer class="Back-Black">
+
+            <div class="footer-seccion1">
+                <h2 class="Color-WhiteSmoke">Contactanos</h2>
+                <div class="footer-seccion2">
+                    <div class="footer-seccion3">
+                    <img src="./res/iconos/telefono.png" alt="telefono">
+                        <div>
+                            <h3 class="Color-WhiteSmoke">Telefono</h3>
+                            <p class="Color-WhiteSmoke">9451-8797</p>
+                        </div>
+                    </div>
+                    <a href="ubicacion.html">
+                        <div class="footer-seccion3">
+                            <img src="./res/iconos/ubicacion.png" alt="Ubicacion">
+                                <div>
+                                    <h3 class="Color-WhiteSmoke">Ubicacion</h3>
+                                    <p class="Color-WhiteSmoke">Contiguo Inst. Enma Romero, Siguatepeque, Honduras</p>
+                                </div>
+                            </div>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="footer-seccion1">
+                <h2 class="Color-WhiteSmoke">Siguenos en Nuestras Redes Sociales</h2>
+                <div class="footer-seccion2">
+                    <div>
+                        <a href="https://www.facebook.com/search/top?q=cayena%20hn&locale=hr_HR" target="_blank">
+                            <img src="./res/iconos/facebook.png" alt="Facebook">
+                            <p class="Color-WhiteSmoke">Cayena HN</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/cayenahn?igsh=MTcwdjk0MXoxbHpsZw==" target="_blank">
+                            <img src="./res/iconos/instagram.png" alt="Instagram">
+                            <p class="Color-WhiteSmoke">Cayena HN</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
         </footer>
 
