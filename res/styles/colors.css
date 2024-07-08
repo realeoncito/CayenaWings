@@ -1,0 +1,55 @@
+:root {
+    --DarkBlue: #0b109f;
+    --WhiteSmoke: whitesmoke;
+    --LightBlue: #2798e8;
+    --Salmon: #fa8071;
+    --Purple: #5d4aa3;
+    --Green: #d6f02b;
+    --Red: #e10001;
+    --Black: #000000;
+  }
+
+  /* Colores Fondo*/
+.Back-Black{
+    background-color: var(--Black);
+}
+
+.Back-LightBlue{
+    background-color: var(--LightBlue);
+}
+
+.Back-Salmon{
+    background-color: var(--Salmon);
+}
+
+.Back-DarkBlue{
+    background-color: var(--DarkBlue);
+}
+
+/*Fondos con transparencia*/
+.FondoBlanco{
+    background-color: rgba(255, 255, 255, 0.835);
+
+}
+
+/* Colores de fuente */
+
+.Color-WhiteSmoke{
+    color: var(--WhiteSmoke);
+}
+
+.Color-Salmon{
+    color: var(--Salmon);
+}
+
+.Color-LightBlue{
+    color: var(--LightBlue);
+}
+
+.Color-Black{
+    color: var(--Black);
+}
+
+.Color-DarkBlue{
+    color: var(--Back-DarkBlue);
+}
