@@ -275,12 +275,12 @@ footer{
 
 .heroBanner{
     width: 100%;
-    height: 600px;
+    height: 90vh;
 }
 
 .heroBanner img{
     width: 100%;
-    height: 600px;
+    height: 90vh;
     position: absolute;
     top: 64px;
     right: 0;
@@ -290,7 +290,7 @@ footer{
 
 .blackCover{
     width: 100%;
-    height: 600px;
+    height: 90vh;
     position: absolute;
     top: 64px;
     right: 0;
