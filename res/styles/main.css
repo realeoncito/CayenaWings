@@ -84,6 +84,8 @@ img{
     width: 50%;
     justify-content: center;
     display: flex;
+    background-image: url(../fondos/blanco-salmon.jpg);
+    
 }
 
 /*Imagen de fondo*/
