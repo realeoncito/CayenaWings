@@ -16,36 +16,75 @@
                 <h1 class="Color-WhiteSmoke">Cayena Wings</h1>
             </a>
             <ul>
-                <li><a href="menu.html" class="HeaderMenu Color-WhiteSmoke">Menu</a></li>
+                <li><a href="menu.html" class="HeaderMenu Color-WhiteSmoke">Menú</a></li>
                 <li><a href="testimonios.html" class="HeaderTestimonios Color-WhiteSmoke">Testimonios</a></li>
                 <li><a href="conocenos.html"  class="HeaderAcerca Color-WhiteSmoke">Acerca de Nosotros</a></li>
                 <li><a href="" class="HeaderFormar">Formar Parte</a></li>
             </ul>
             <div class="menu_hamburguesa">
-                <img src="./res/iconos/menu_hamburguesa.png" alt="Menu">
+                <img src="./res/iconos/menu_hamburguesa.png" alt="Menú">
             </div>
         </nav>
     </header>
     <!-- Main -->
     <main class="IndexMain">
         <section class="heroBanner">
-            <img src="./res/img/Alitas_banner.jpg" alt="">
+            <picture>
+                <source srcset="./res/img/Alitas_banner-lg.jpg" media="(min-width: 1024px)" />
+                <source srcset="./res/img/Alitas_banner-tablet.jpg" media="(min-width: 710px)" />
+                <img src="./res/img/Alitas_banner-mobil.jpg" alt="Alitas">
+            </picture>
             <div class="blackCover"></div>
             <div class="heroBannerInfo">
                 <h2>Cayena Wings</h2>
                 <p>"Cada día que lo hagamos, lo haremos lo mejor que podamos. " -Jack Daniels</p>
-                <a href="menu.html" class="IndexBoton">MENU</a>   
+                <a href="menu.html" class="IndexBoton">MENÚ</a>   
             </div>
         </section>
         <section class="IndexCards">
             <div class="IndexCard">
                 <div class="CardImg">
-                    <img src="res/img/menu.jpg" alt="Menu">
+                    <picture>
+                        <source srcset="./res/img/menu.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./res/img/menu-tablet.jpg" media="(min-width: 710px)" />
+                        <source srcset="./res/img/menu-tablet-lg.jpg" media="(min-width: 500px)" />
+                        <img src="./res/img/menu.jpg" alt="Menú">                    
+                    </picture>
                 </div>
                 <div class="CardInfo">
-                    <h3>Menu</h3>
-                    <p> Puedes empezar tu dia con nuestros deliciosos aperitivos. Disfruta de nuestras espcialidades con nuestras alitas y hamburguesas. Y para terminar tienes que probar nuestros postres</p>
-                    <a href="menu.html" class="IndexBoton">Conocer el menu</a>
+                    <h3>Menú</h3>
+                    <p>Puedes empezar tu día con nuestros deliciosos aperitivos. Disfruta de nuestras especialidades con nuestras alitas y hamburguesas. Y para terminar tienes que probar nuestros postres.</p>
+                    <a href="./menu.html" class="IndexBoton">Conocer el menú</a>
+                </div>
+            </div>
+            <div class="IndexCard">
+                <div class="CardImg">
+                    <picture>
+                        <source srcset="./res/img/testimonios.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./res/img/testimonios-tablet.jpg" media="(min-width: 710px)" />
+                        <source srcset="./res/img/testimonios-tablet-lg.jpg" media="(min-width: 500px)" />
+                        <img src="./res/img/testimonios.jpg" alt="Testimonios">                    
+                    </picture>
+                </div>
+                <div class="CardInfo">
+                    <h3>Testimonios</h3>
+                    <p>Oye la palabra de nuestros clientes, incrementemos nuestra confianza. Pues aquí te servimos con calidad, asegurada.</p>
+                    <a href="./testimonios.html" class="IndexBoton">Conocer los testimonios</a>
+                </div>
+            </div>
+            <div class="IndexCard">
+                <div class="CardImg">
+                    <picture>
+                        <source srcset="./res/img/Cayena.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./res/img/Cayena-tablet.jpg" media="(min-width: 710px)" />
+                        <source srcset="./res/img/Cayena-tablet-lg.jpg" media="(min-width: 500px)" />
+                        <img src="./res/img/Cayena.jpg" alt="Menu">                    
+                    </picture>
+                </div>
+                <div class="CardInfo">
+                    <h3>Acerca de Nosotros</h3>
+                    <p>Conoce quien es el que te sirve la comida. Nuestra historia, nuestras misiones y visiones. Como también como comunicarte con nosotros.</p>
+                    <a href="menu.html" class="IndexBoton">Conocenos</a>
                 </div>
             </div>
         </section>
@@ -53,12 +92,12 @@
 
     <footer class="Back-DarkBlue">
         <div class="footer-seccion1">
-            <h2 class="Color-WhiteSmoke">Contactanos</h2>
+            <h2 class="Color-WhiteSmoke">Contáctanos</h2>
             <div class="footer-seccion2">
                 <div class="footer-seccion3">
                 <img src="./res/iconos/telefono.png" alt="telefono">
                     <div>
-                        <h3 class="Color-WhiteSmoke">Telefono</h3>
+                        <h3 class="Color-WhiteSmoke">Teléfono</h3>
                         <p class="Color-WhiteSmoke">9451-8797</p>
                     </div>
                 </div>
@@ -66,7 +105,7 @@
                     <div class="footer-seccion3">
                         <img src="./res/iconos/ubicacion.png" alt="Ubicacion">
                             <div>
-                                <h3 class="Color-WhiteSmoke">Ubicacion</h3>
+                                <h3 class="Color-WhiteSmoke">Ubicación</h3>
                                 <p class="Color-WhiteSmoke">Contiguo Inst. Enma Romero, Siguatepeque, Honduras</p>
                             </div>
                         </div>
@@ -75,7 +114,7 @@
             </div>
         </div>
         <div class="footer-seccion1">
-            <h2 class="Color-WhiteSmoke">Siguenos en Nuestras Redes Sociales</h2>
+            <h2 class="Color-WhiteSmoke">Síguenos en Nuestras Redes Sociales</h2>
             <div class="footer-seccion2">
                 <div>
                     <a href="https://www.facebook.com/search/top?q=cayena%20hn&locale=hr_HR" target="_blank">
