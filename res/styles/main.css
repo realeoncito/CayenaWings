@@ -1,27 +1,15 @@
-:root {
-    --Back-DarkBlue: #0b109f;
-    --color-WhiteSmoke: whitesmoke;
-  }
-  
 
-*{margin: 0;
-box-sizing: border-box;
-list-style: none;
-text-decoration: none;}
-
-/* Colores */
-
-#Back-DarkBlue{
-    background-color: var(--Back-DarkBlue);
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-#Color-WhiteSmoke{
-    color: var(--color-WhiteSmoke);
-}
 
 header{
     width: 100%;
-    height: 128px;
+    height: 64px;
     position: fixed;
     top: 0;
     right: 0;
@@ -44,8 +32,8 @@ header nav a{
 }
 
 .logo{
-    width: 128px;
-    height: 128px;
+    width: 64px;
+    height: 64px;
 }
 
 header nav div h1{
@@ -71,8 +59,101 @@ header nav ul{
 /* punto de quiebre 910px */
 
 main{
-    margin-top: 128px;
+    margin-top: 64px;
 }
+
+
+
+img{
+    width: 32px;
+    height: 32px;
+}
+
+.heroPanel{
+    /*Declaramos un  nuevo plano cartesiano*/
+    display: flex;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.heroPanel .Container{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    background-image: url(../fondos/blanco-salmon.jpg);
+    
+}
+
+/*Imagen de fondo*/
+.heroPanel .Container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.heroPanel .Container .Contenido{
+    position: absolute;
+    top: calc(50% - 150px);
+    width: 50%;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.heroPanel .Container .Contenido h2{
+    padding: 1.2rem;
+    font-size: xx-large;
+    letter-spacing: 2px;
+
+}
+
+.heroPanel .Container .Contenido .NombrePie{
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    width: 100%;
+
+}
+/*
+.heroPanel .Container .Contenido .NombrePie div{
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+    */
+
+.heroPanel .Container .Contenido .NombrePie img{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 0.5rem;
+
+}
+
+.heroPanel .Container .Contenido .NombrePie span{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NombrePie h3{
+    margin: 0rem 0.5rem;
+
+}
+
+/*Revisar vision en movil del footer.*/
 
 footer{
   display: flex;
@@ -83,12 +164,10 @@ footer{
   justify-content: space-between;
   padding: 0;
   width: 100%;
+  overflow: hidden;
 }
 
-img{
-    width: 32px;
-    height: 32px;
-}
+
 
 .footer-seccion1{
     display: flex;
@@ -110,12 +189,19 @@ img{
     justify-content: space-around;
 }
 
+.footer-seccion2 h3,.footer-seccion2 p{
+    display: none;
+}
+
 .footer-seccion3{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     gap: 5px;
+    padding-bottom: 15px;
 }
+
+/*Media Queries*/
 
 @media (min-width: 710px) {
     .menu_hamburguesa{
@@ -138,6 +224,7 @@ img{
     
     header nav ul li a{
         font-size: 25px;
+        padding: 0.8rem 1rem;
         font-weight: bold;
         height: 100%;
         display: flex;
@@ -151,6 +238,15 @@ img{
     .HeaderFormar{
         display: none;
     }
+
+    .footer-seccion2 h3, p{
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    
 }
 
 @media (min-width:1024px) {
@@ -163,7 +259,9 @@ img{
         display: flex;
         background-color: white;  
         color: black;
-        padding: 0 15px 0 5px;
+        padding: 0 15px 0 15px;
+        align-items: center;
+        justify-content: center;
         /* trbl */
     }
 
@@ -171,3 +269,164 @@ img{
         flex-direction: row;
     }
 }
+
+/* Index only */
+.IndexMain{
+    background-image: url(../fondos/fondo-morado-blanco-mobil.jpg);
+}
+
+.heroBanner{
+    width: 100%;
+    height: 90vh;
+}
+
+.heroBanner img{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.blackCover{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.5;
+    background-color: black;
+}
+
+.heroBannerInfo{
+    height: min-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px;
+    color: white;
+    gap: 20px;
+    position: absolute;
+    top: 64px;
+    right: 0;
+}
+
+.heroBannerInfo h2{
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.heroBannerInfo p{
+    z-index: 3;
+    width: 100%;
+    font-size: 24px;
+    opacity: 0.7;
+    line-height: 1.5;  
+}
+
+.IndexBoton{
+    padding: 15px 50px;
+    z-index: 3;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    font-style: normal;
+}
+
+.IndexCards{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 80px;
+}
+
+.IndexCard{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    background-color: white;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.CardImg img{
+    width: 100%;
+    height: 360px;
+}
+
+.CardInfo{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.CardInfo h3{
+    color: #333333;
+    font-size: 50px;
+    text-align: center;
+}
+
+.CardInfo p{
+    color: #888888;
+    font-size: 24px;
+    width: 75%;
+}
+
+.CardInfo .IndexBoton{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width: 710px) {
+    .heroBannerInfo{
+        width: 36%;
+
+    }
+    .IndexMain{
+        background-image: url(../fondos/fondo-morado-blanco-tablet.jpg);
+    }
+
+    .heroBannerInfo h2{
+        font-size: 70px;
+    }
+
+    .IndexCard:nth-child(2) .CardImg{
+        order: 2;
+    }
+
+    .IndexCard:nth-child(3) .CardInfo{
+        order: 1;
+    }
+
+    .IndexCard{
+        height: 80vh;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .CardImg img{
+        height: 80vh;
+    }
+}
+
+@media (min-width: 1024px) {
+.IndexMain{
+    background-image: url(../fondos/fondo-morado-blanco-lg.jpg);
+}
+}
+
