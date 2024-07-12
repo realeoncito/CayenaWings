@@ -6,6 +6,15 @@
     text-decoration: none;
 }
 
+.fullimage img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+
+}
 
 header{
     width: 100%;
@@ -73,18 +82,25 @@ img{
     /*Declaramos un  nuevo plano cartesiano*/
     display: flex;
     position: relative;
-    height: 90vh;
+    height: 60vh;
     width: 100%;
     justify-content: center;
+    align-items: center;
+
 }
 
 .heroPanel .Container{
-    position: relative;
     height: 100%;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+
+    background-image: url(../fondos/blanco-salmon.jpg);
+    
 }
+
+
 
 /*Imagen de fondo*/
 .heroPanel .Container img{
@@ -93,24 +109,48 @@ img{
     left: 0;
     height: 100%;
     width: 100%;
+    object-fit: cover;
+
 }
 
+
+
 .heroPanel .Container .Contenido{
-    position: absolute;
-    top: calc(50% - 150px);
-    width: 50%;
+    z-index: 55;
+
+
+    position: relative;
+
+    justify-content: center;
+    /*top: calc(50% - 150px);*/
+    display: flex;
+    flex-direction: column;
+    /*width: 50%;*/
     display: block;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 
 }
 
 .heroPanel .Container .Contenido h2{
-    padding: 1.2rem;
-    font-size: xx-large;
+    display: inline-block;
+    z-index: 50;
+    margin-top: 20px;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 40px;
+
     letter-spacing: 2px;
 
 }
+
+.heroPanel .Container .Contenido p{
+    font-size: large;
+    font-style: italic;
+    padding: 1rem;
+}
+
+
 
 .heroPanel .Container .Contenido .NombrePie{
     margin-top: 25px;
@@ -123,6 +163,34 @@ img{
     width: 100%;
 
 }
+
+.heroPanel .Container .Contenido .NombrePie p{
+    padding: 0;
+
+}
+
+
+/*Punto de corte de mobile a resoluciones mas grandes.*/
+@media(min-width: 480px){
+    .heroPanel{
+       height: fit-content;
+        
+    }
+
+    .heroPanel .Container{
+        height: 100%;
+        width: 50%;
+    }
+
+    .heroPanel .Container .Contenido{
+        display: flex;
+        align-items: center;
+        height: fit-content;
+
+    }
+
+}
+
 /*
 .heroPanel .Container .Contenido .NombrePie div{
     position: relative;
@@ -151,6 +219,63 @@ img{
 
 }
 
+/*Seccion extra de testimonios*/
+.Testimonios{
+    padding: 2rem;
+}
+
+.CardContainer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.CardContainer h3{
+    display: block;
+    text-align: left;
+
+}
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    border: 2px solid black;
+    max-width: 350px;
+    
+    text-align: center;
+    height: fit-content;
+    align-items: center;
+}
+
+.Contenido{
+    padding: 1rem;
+
+}
+
+.CardContainer .Card .p{
+    display: flex;
+    text-align: center;
+
+}
+
+
+.Card .NombrePie{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.Card .NombrePie span{
+    margin-top: 100px;
+    text-align: center;
+
+
+}
 /*Revisar vision en movil del footer.*/
 
 footer{
@@ -244,6 +369,9 @@ footer{
         justify-content: space-around;
     }
 
+    .CardContainer{
+        flex-direction: row;
+    }
     
 }
 

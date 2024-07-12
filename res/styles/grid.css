@@ -1,0 +1,135 @@
+/*
+    Archivo para manejar la distribucion de elementos en el 
+*/
+
+/*
+
+
+*/
+
+.grid{
+    display: flex;
+    /*Se reorganizan de manera vertical, los organiza hacia abajo*/
+    flex-direction: column;
+}
+
+.grid .row{
+    /*Todos los hijos de un contenedor flex, solo se aplica a los elementos dentro de un contenedor
+    que sea flex. */
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*Rackets buscan coincidencias, hace busqueda. 
+    el *= significa que contenga
+*/
+
+
+.grid .row.reverse{
+    flex-direction: row-reverse;
+}
+
+.grid .row [class*='col-']{
+    /*Booleano, se estira y se encoja en ese orden*/
+    flex: 1 0;
+    
+}
+
+.fullcenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-end{
+    
+    justify-content: flex-end;
+}
+.p-4{
+    padding: 1rem;
+}
+
+.p-2{
+    padding: 0.5rem
+}
+
+fieldset{
+    border: none;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+}
+
+button{
+    border-radius: 17px;
+    background-color: #999;
+    font-weight: bold;
+
+}
+
+.grid .row .col-1{flex-basis: calc(100% / 12);}
+.grid .row .col-2{flex-basis: calc(100% / 6);}
+.grid .row .col-3{flex-basis: calc(100% / 4);}
+.grid .row .col-4{flex-basis: calc(100% / 3);}
+.grid .row .col-5{flex-basis: calc(100% / 12 * 5);}
+.grid .row .col-6{flex-basis: calc(100% / 2);}
+.grid .row .col-7{flex-basis: calc(100% / 12 * 7);}
+.grid .row .col-8{flex-basis: calc(100% / 3 * 2);}
+.grid .row .col-9{flex-basis: calc(100% / 12 * 9);}
+.grid .row .col-10{flex-basis: calc(100% / 12 * 10);}
+.grid .row .col-11{flex-basis: calc(100% / 12 * 11);}
+.grid .row .col-12{flex-basis: calc(100%);}
+
+/*
+MEDIA QUERIES
+mobile 0 - 479
+medium -md 480 - 1023
+large -l 1024 - 1400
+extraLarge -xl 1401 - 
+
+*/
+
+/*MEDIUM*/
+@media (min-width:480px){
+
+    /* m es prefijo para establecer que solo se van a usar cuando sea medium */
+    .grid .row .col-m-1{flex-basis: calc(100% / 12);}
+    .grid .row .col-m-2{flex-basis: calc(100% / 6);}
+    .grid .row .col-m-3{flex-basis: calc(100% / 4);}
+    .grid .row .col-m-4{flex-basis: calc(100% / 3);}
+    .grid .row .col-m-5{flex-basis: calc(100% / 12 * 5);}
+    .grid .row .col-m-6{flex-basis: calc(100% / 2);}
+    .grid .row .col-m-7{flex-basis: calc(100% / 12 * 7);}
+    .grid .row .col-m-8{flex-basis: calc(100% / 3 * 2);}
+    .grid .row .col-m-9{flex-basis: calc(100% / 12 * 9);}
+    .grid .row .col-m-10{flex-basis: calc(100% / 12 * 10);}
+    .grid .row .col-m-11{flex-basis: calc(100% / 12 * 11);}
+    .grid .row .col-m-12{flex-basis: calc(100%);}
+
+}
+
+/*LARGE*/
+@media (min-width:1024px){
+
+    /* l es prefijo para establecer que solo se van a usar cuando sea large */
+    .grid .row .col-l-1{flex-basis: calc(100% / 12);}
+    .grid .row .col-l-2{flex-basis: calc(100% / 6);}
+    .grid .row .col-l-3{flex-basis: calc(100% / 4);}
+    .grid .row .col-l-4{flex-basis: calc(100% / 3);}
+    .grid .row .col-l-5{flex-basis: calc(100% / 12 * 5);}
+    .grid .row .col-l-6{flex-basis: calc(100% / 2);}
+    .grid .row .col-l-7{flex-basis: calc(100% / 12 * 7);}
+    .grid .row .col-l-8{flex-basis: calc(100% / 3 * 2);}
+    .grid .row .col-l-9{flex-basis: calc(100% / 12 * 9);}
+    .grid .row .col-l-10{flex-basis: calc(100% / 12 * 10);}
+    .grid .row .col-l-11{flex-basis: calc(100% / 12 * 11);}
+    .grid .row .col-l-12{flex-basis: calc(100%);}
+
+}
