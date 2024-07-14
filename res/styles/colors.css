@@ -10,7 +10,10 @@
   }
 
   /* Colores Fondo*/
-.Back-Black{
+.Back-WhiteSmoke{
+    background-color: var(--WhiteSmoke);
+}
+  .Back-Black{
     background-color: var(--Black);
 }
 
@@ -24,6 +27,24 @@
 
 .Back-DarkBlue{
     background-color: var(--DarkBlue);
+}
+
+/* Colores de fondo con gradiantes */
+
+.Back-Black-Gradient{
+    background: linear-gradient(to right, #ffff, #ffff, var(--Black));
+}
+
+.Back-LightBlue-Gradient{
+    background: linear-gradient(to right, #ffff, #ffff, #94c4e8, var(--LightBlue), var(--LightBlue));
+}
+
+.Back-Salmon-Gradient{
+    background: linear-gradient(to right, #ffff, #ffff, var(--Salmon));
+}
+
+.Back-DarkBlue-Gradient{
+    background: linear-gradient(to right, #ffff, #ffff, var(--DarkBlue));
 }
 
 /*Fondos con transparencia*/
