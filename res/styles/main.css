@@ -399,6 +399,8 @@ footer{
 /* Index only */
 .IndexMain{
     background-image: url(../fondos/fondo-morado-blanco-mobil.jpg);
+    object-fit: cover;
+    object-position: center;
 }
 
 .heroBanner{
@@ -414,6 +416,8 @@ footer{
     right: 0;
     left: 0;
     z-index: 1;
+    object-fit: cover;
+    object-position: center;
 }
 
 .blackCover{
@@ -486,9 +490,17 @@ footer{
     border: 1px solid black;
 }
 
+.CardImg{
+    padding: 5px 0;
+    width: 100%;
+    height: 100%;
+}
+
 .CardImg img{
     width: 100%;
     height: 360px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .CardInfo{
@@ -540,13 +552,15 @@ footer{
     }
 
     .IndexCard{
-        height: 80vh;
+        height: min-content;
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
+        align-items: center;
     }
 
     .CardImg img{
-        height: 80vh;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -554,5 +568,19 @@ footer{
 .IndexMain{
     background-image: url(../fondos/fondo-morado-blanco-lg.jpg);
 }
+}
+
+@media (min-width: 1500px) {
+    .CardInfo h3{
+        font-size: 70px;
+    }
+    
+    .CardInfo p{
+        font-size: 34px;
+    }
+    
+    .CardInfo .IndexBoton{
+        font-size: 34px;
+    }
 }
 
