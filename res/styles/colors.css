@@ -9,7 +9,7 @@
     --Black: #000000;
   }
 
-  /* Colores Fondo*/
+  /* Colores Fondo */
 .Back-WhiteSmoke{
     background-color: var(--WhiteSmoke);
 }
@@ -29,10 +29,17 @@
     background-color: var(--DarkBlue);
 }
 
+.Back-Purple{
+    background-color: var(--Purple);
+}
+.Back-Green{
+    background-color: var(--Green);
+}
+
 /* Colores de fondo con gradiantes */
 
 .Back-Black-Gradient{
-    background: linear-gradient(to right, #000000, #8c8c8c, var(--Black));
+    background: linear-gradient(to right, var(--Black), #878787, var(--Black), var(--Black));
 }
 
 .Back-LightBlue-Gradient{
@@ -44,13 +51,16 @@
 }
 
 .Back-DarkBlue-Gradient{
-    background: linear-gradient(to right, var(--DarkBlue), #2c4dc5, var(--DarkBlue));
+    background: linear-gradient(to right, var(--DarkBlue), #5772d4, var(--DarkBlue));
 }
 
-/*Fondos con transparencia*/
+.Back-Purple-Gradient{
+    background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Green));
+}
+
+/* Fondo con transparencia */
 .FondoBlanco{
     background-color: rgba(255, 255, 255, 0.835);
-
 }
 
 /* Colores de fuente */
@@ -73,4 +83,14 @@
 
 .Color-DarkBlue{
     color: var(--Back-DarkBlue);
+}
+
+
+.Color-Green{
+    color: var(--Green);
+}
+
+.Color-Purple{
+    columns: var(--Purple);
+
 }
