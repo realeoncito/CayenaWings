@@ -53,3 +53,7 @@
 .Color-DarkBlue{
     color: var(--Back-DarkBlue);
 }
+
+.Color-Purplu{
+    columns: var(--Purple);
+}
