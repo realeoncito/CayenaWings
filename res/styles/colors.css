@@ -13,7 +13,7 @@
 .Back-WhiteSmoke{
     background-color: var(--WhiteSmoke);
 }
-  .Back-Black{
+.Back-Black{
     background-color: var(--Black);
 }
 
@@ -32,7 +32,7 @@
 /* Colores de fondo con gradiantes */
 
 .Back-Black-Gradient{
-    background: linear-gradient(to right, #ffff, #ffff, var(--Black));
+    background: linear-gradient(to right, #000000, #8c8c8c, var(--Black));
 }
 
 .Back-LightBlue-Gradient{
@@ -44,7 +44,7 @@
 }
 
 .Back-DarkBlue-Gradient{
-    background: linear-gradient(to right, #ffff, #ffff, var(--DarkBlue));
+    background: linear-gradient(to right, var(--DarkBlue), #2c4dc5, var(--DarkBlue));
 }
 
 /*Fondos con transparencia*/
