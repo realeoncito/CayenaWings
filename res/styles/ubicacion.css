@@ -18,7 +18,7 @@ body{
     width: 100vw;
 }
 
-main h1{
+main h2{
     padding: 1rem 0rem;
 }
 
@@ -32,29 +32,62 @@ main h1{
 
 
 @media(min-width:710px) {
+    main{
+        min-height: 90vh;
+    }
+
+    main h2{
+        font-size: 3.5rem;
+    }
+
     .center{
         flex-direction: row;
     }    
     .horarios{
         height: 480px;
+        width: 600px;
         padding: 5rem 2rem;
-        width: auto;
+        width: 700px;
+        background-color: white;
+        color: black;
+        border: none;
+        font-size: 2rem;
     }
     .contenido{
+        flex-direction: column;
         padding-bottom: 2rem;
     }
 
     .center iframe{
-        width: 500px;
+        width: 700px;
         height: 480px;
     }
 
     body main{
         background-image: url(../fondos/blanco-azulOscuro.jpg);
     }
+
+    
 }
 
-@media(min-width:1024px){
+@media(min-width:1025px){
+
+    main h2{
+        font-size: xx-large;
+    }
+
+    .contenido{
+        flex-direction: row;
+    }
+
+    .horarios{
+        color: white;
+        background-color: var(--DarkBlue);
+        border: none;
+        width: auto;
+        font-size: large;
+    }
+
     .center iframe{
         width: 900px;
     } 
@@ -66,3 +99,45 @@ main h1{
         color: black;
     }
 }
+
+.cargando{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.cargando img{
+    position: absolute;
+}
+
+.cargando img:nth-child(1){
+    animation: cargando 4s linear infinite;
+    z-index: 10000;
+    width: 256px;
+    height: 256px;
+}
+
+.cargando img:nth-child(2){
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes cargando {
+    0%{
+        transform: rotate(0deg);
+    }    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
