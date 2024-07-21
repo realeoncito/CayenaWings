@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="res/styles/main.css" />
     <link rel="stylesheet" href="res/styles/colors.css" />
     <link rel="stylesheet" href="res/styles/Contactanos.css" />
+    <link rel="stylesheet" href="res/styles/animaciones.css">
+    <script src="js/animaciones.js"></script>
   </head>
 
   <body>
@@ -31,13 +33,10 @@
           </li>
           <li>
             <a href="conocenos.html" class="HeaderAcerca Color-Green"
-              >Contáctanos</a
-            >
-          </li>
-          <li>
-            <a class="HeaderFormar Back-Green Color-Black">Formar Parte</a>
+              >Contáctanos</a>
           </li>
         </ul>
+
 
         <div class="hamburger-menu" id="hamburger-menu">
           <span></span>
@@ -77,22 +76,44 @@
       </section>
     </main>
     <footer class="Back-Black">
-      <div class="footer-seccion1">
-        <h2 class="Color-WhiteSmoke">Contáctanos</h2>
-        <div class="footer-seccion2">
-          <div class="footer-seccion3">
-            <img src="res/iconos/telefono.png" alt="telefono" />
-            <div>
-              <h3 class="Color-WhiteSmoke">Teléfono</h3>
-              <p class="Color-WhiteSmoke">9451-8797</p>
+        <div class="footer-seccion1">
+            <h2 class="Color-WhiteSmoke">Contáctanos</h2>
+            <div class="footer-seccion2">
+                <div class="footer-seccion3">
+                <img src="./res/iconos/telefono.png" alt="telefono">
+                    <div>
+                        <h3 class="Color-WhiteSmoke">Teléfono</h3>
+                        <p class="Color-WhiteSmoke">9451-8797</p>
+                    </div>
+                </div>
+                <a href="ubicacion.html">
+                    <div class="footer-seccion3">
+                        <img src="./res/iconos/ubicacion.png" alt="Ubicacion">
+                            <div>
+                                <h3 class="Color-WhiteSmoke">Ubicación</h3>
+                                <p class="Color-WhiteSmoke">Contiguo Inst. Enma Romero, Siguatepeque, Honduras</p>
+                            </div>
+                        </div>
+                </a>
+                
             </div>
-          </div>
-          <a href="ubicacion.html">
-            <div class="footer-seccion3">
-              <img src="res/iconos/ubicacion.png" alt="Ubicacion" />
-              <div>
-                <h3 class="Color-WhiteSmoke">Ubicación</h3>
-              </div>
+        </div>
+
+        <div class="footer-seccion1">
+            <h2 class="Color-WhiteSmoke redes">Síguenos</h2>
+            <div class="footer-seccion2">
+                <div>
+                    <a href="https://www.facebook.com/search/top?q=cayena%20hn&locale=hr_HR" target="_blank">
+                        <img src="./res/iconos/facebook.png" alt="Facebook">
+                        <p class="Color-WhiteSmoke">Cayena HN</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/cayenahn?igsh=MTcwdjk0MXoxbHpsZw==" target="_blank">
+                        <img src="./res/iconos/instagram.png" alt="Instagram">
+                        <p class="Color-WhiteSmoke">Cayena HN</p>
+                    </a>
+                </div>
             </div>
           </a>
         </div>
@@ -119,7 +140,13 @@
             </a>
           </div>
         </div>
-      </div>
     </footer>
+
+    <aside>
+      <div class="cargando">
+          <img src="res/iconos/loading-azulOscuro.png" alt="Cargando">
+          <img src="res/logos/transparente-azulOscuro.png" alt="">
+      </div>
+  </aside>
   </body>
 </html>
