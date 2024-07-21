@@ -1,0 +1,68 @@
+body{
+    font-family: "Inter",sans-serif;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 2rem;
+    width: 100vw;
+}
+
+main h1{
+    padding: 1rem 0rem;
+}
+
+.contenido{
+    padding-bottom: 0rem;
+}
+
+.center iframe{
+    width: 100vw;
+}
+
+
+@media(min-width:710px) {
+    .center{
+        flex-direction: row;
+    }    
+    .horarios{
+        height: 480px;
+        padding: 5rem 2rem;
+        width: auto;
+    }
+    .contenido{
+        padding-bottom: 2rem;
+    }
+
+    .center iframe{
+        width: 500px;
+        height: 480px;
+    }
+
+    body main{
+        background-image: url(../fondos/blanco-azulOscuro.jpg);
+    }
+}
+
+@media(min-width:1024px){
+    .center iframe{
+        width: 900px;
+    } 
+}
+
+@media(max-width:709px){
+    .horarios{
+        background-color: transparent;
+        color: black;
+    }
+}
