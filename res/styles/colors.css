@@ -9,7 +9,10 @@
     --Black: #000000;
   }
 
-  /* Colores Fondo*/
+  /* Colores Fondo */
+.Back-WhiteSmoke{
+    background-color: var(--WhiteSmoke);
+}
 .Back-Black{
     background-color: var(--Black);
 }
@@ -29,19 +32,35 @@
 .Back-Purple{
     background-color: var(--Purple);
 }
-
-.Back-Purple-degradado{
-    background: linear-gradient(to right, var(--Purple), var(--Green));
-    /*background: linear-gradient(to right, var(--Purple), var(--WhiteSmoke), var(--WhiteSmoke));*/
-}
-
 .Back-Green{
     background-color: var(--Green);
 }
-/*Fondos con transparencia*/
+
+/* Colores de fondo con gradiantes */
+
+.Back-Black-Gradient{
+    background: linear-gradient(to right, var(--Black), #878787, var(--Black), var(--Black));
+}
+
+.Back-LightBlue-Gradient{
+    background: linear-gradient(to right, #ffff, #ffff, var(--Black), var(--Black));
+}
+
+.Back-Salmon-Gradient{
+    background: linear-gradient(to right, #ffff, #ffff, var(--Salmon));
+}
+
+.Back-DarkBlue-Gradient{
+    background: linear-gradient(to right, var(--DarkBlue), #5772d4, var(--DarkBlue));
+}
+
+.Back-Purple-Gradient{
+    background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Green));
+}
+
+/* Fondo con transparencia */
 .FondoBlanco{
     background-color: rgba(255, 255, 255, 0.835);
-
 }
 
 /* Colores de fuente */
@@ -69,6 +88,7 @@
 
 .Color-Green{
     color: var(--Green);
+}
 
 .Color-Purple{
     columns: var(--Purple);
