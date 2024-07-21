@@ -43,7 +43,7 @@
 }
 
 .Back-LightBlue-Gradient{
-    background: linear-gradient(to right, #ffff, #ffff, #94c4e8, var(--LightBlue), var(--LightBlue));
+    background: linear-gradient(to right, #ffff, #ffff, var(--Black), var(--Black));
 }
 
 .Back-Salmon-Gradient{

@@ -82,7 +82,7 @@ body{
     border-radius: 4px;
 }
 
-@media(min-width: 520px){
+@media(min-width: 480px){
     .container-cards .card-5{
         width: 460px;
     }
@@ -91,11 +91,17 @@ body{
     }
 }
 @media(min-width: 1000px){
-   .container-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 260px);
-   }
-   .container-cards .card-5{
-    width: 480px;
-   }
+    .container-cards .card-5{
+        width: 220px;
+        height: 220px;
+    }
+    .container-cards .card-5 a{
+        left: 50px;
+    }
+    .heroPanel{
+        height: 50vh;
+    }
+    .container-cards{
+        height: 80vh;
+    }
 }
