@@ -2,6 +2,8 @@ body{
     font-family: "Inter",sans-serif;
 }
 
+
+
 .center{
     display: flex;
     justify-content: center;
@@ -9,13 +11,18 @@ body{
     flex-direction: column;
 }
 
+
 .horarios{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 2rem 2rem;
     width: 100vw;
+}
+
+.horarios p{
+    padding-top: 1rem;
 }
 
 main h2{
@@ -26,9 +33,14 @@ main h2{
     padding-bottom: 0rem;
 }
 
-.center iframe{
-    width: 100vw;
+.contenido p{
+    line-height: 1.5rem;
 }
+
+.center iframe{
+    width: 90vw;
+}
+
 
 
 @media(min-width:710px) {
@@ -58,6 +70,10 @@ main h2{
         padding-bottom: 2rem;
     }
 
+    .contenido p{
+        line-height: 3rem;
+    }
+
     .center iframe{
         width: 700px;
         height: 480px;
@@ -66,8 +82,6 @@ main h2{
     body main{
         background-image: url(../fondos/blanco-azulOscuro.jpg);
     }
-
-    
 }
 
 @media(min-width:1025px){
@@ -80,16 +94,22 @@ main h2{
         flex-direction: row;
     }
 
+    .contenido p{
+        line-height: normal;
+    }
+
     .horarios{
         color: white;
         background-color: var(--DarkBlue);
         border: none;
         width: auto;
         font-size: large;
+        height: 75vh;
     }
 
     .center iframe{
         width: 900px;
+        height: 75vh;
     } 
 }
 
@@ -139,5 +159,4 @@ main h2{
         transform: rotate(360deg);
     }
 }
-
 
