@@ -27,13 +27,11 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 590px);
-    justify-content: center;
-    align-items: center;
     gap: 20px;
 }
 
 .card{
-    width: 590px;
+    width: 400px;
     height: 210px;
     max-height: 210px;
     display: grid;
@@ -42,7 +40,7 @@
 }
 
 .content{
-    width: 300px;
+    width: 225px;
     background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
@@ -59,6 +57,7 @@
 
 .content-precio{
     color: #E4432F;
+    font-weight: bold;
 }
 
 .content-button{
@@ -89,6 +88,21 @@
 
 .footerborder{
     border-top: 2px solid white;
+}
+
+@media (min-width: 600px){
+    .cardsMenu{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 590px;
+    }
+
+    .content{
+        width: 300px;
+    }
 }
 
 @media (min-width: 1024px) {
