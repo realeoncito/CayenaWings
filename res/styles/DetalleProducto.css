@@ -1,0 +1,34 @@
+body{
+    font-family:"Inter",sans-serif;
+}
+
+main{
+    min-height: 90vh;
+}
+
+.producto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IndexCard{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+}
+
+.IndexCard .CardInfo span{
+    font-size: large;
+}
+
+.IndexCard .CardInfo p{
+    line-height: 2rem;
+}
+
+@media (min-width:1025px) {
+    .IndexCard{
+        flex-direction: row;
+    }    
+}
