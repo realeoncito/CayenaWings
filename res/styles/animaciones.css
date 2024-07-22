@@ -37,3 +37,56 @@
         transform: rotate(360deg);
     }
 }
+
+/*Definicion de los elementos del carrusel*/
+
+.carouselContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    /*width: 90%;*/
+    overflow: hidden;
+}
+
+
+.carouselCards{
+    display: flex;
+    gap: 20px;
+}
+
+#firstCard{
+    margin-left: 10px;
+}
+
+/*Se manejara a nivel de javascript*/
+.carouselCards.sliding-transition{
+    transition: transform 0.5s ease-in-out;
+}
+
+/*Elementos visuales de la navegacion*/
+.carousel-navigator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.carousel-navigator-dot{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #FFF;
+    padding: 0.3rem;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.carousel-navigator-dot.active {
+    background-color: #F00;
+}

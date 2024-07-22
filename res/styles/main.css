@@ -128,7 +128,7 @@ img{
     /*width: 50%;*/
     display: block;
     text-align: center;
-    padding: 2rem;
+    padding: 0;
 
 }
 
@@ -242,12 +242,16 @@ img{
 .Card{
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 2rem 0 2rem 0;
+    /*padding: 1rem;*/
     border: 2px solid black;
-    max-width: 350px;
+    width: 300px;
+    /*max-width: 350px;*/
     
     text-align: center;
     height: fit-content;
+    /*min-height: 80px;
+    max-height: 80px;*/
     align-items: center;
 }
 
