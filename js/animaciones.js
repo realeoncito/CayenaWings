@@ -77,18 +77,30 @@ let carousel = () => {
     function moveSegmentToIndex(index=0){
         clearTimeout(timeOutID);
 
+        if(index === totalItems-2){
+            //carousel.insertAfter(items.index +1, carousel.firstElementChild);
+        }
+        prevIndex = currentIndex;
         currentIndex = index;
+        //carousel.appendChild(items[prevIndex]);
         carousel.classList.add('sliding-transition');
         carousel.style.transform = `translateX(-${index*320}px)`
+        
         setDotAsActive(currentIndex);
-        tick();
+
+        setTimeout(() => {
+            carousel.appendChild(items[prevIndex])
+            carousel.style.transform = 'translateX(0)';
+            carousel.classList.remove('sliding-transition');
+        }, 600);
+        //tick();
     }
 
     function tick(){
         timeOutID = setTimeout(() => {
             moveSegmentToIndex(currentIndex + 1);
             tick();
-        }, 2000);
+        }, 5000);
     }
 
     init();
