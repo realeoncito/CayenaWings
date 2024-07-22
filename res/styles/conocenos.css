@@ -22,7 +22,7 @@
 .hero-content .Contenido {
     position: relative;
     z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
-    color: #000000; /* Color del texto para contraste con el fondo oscuro */
+    color: #ffffff; /* Color del texto para contraste con el fondo oscuro */
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados para mejor estética */
     max-width: 800px; /* Limita el ancho máximo del contenido */
@@ -30,17 +30,23 @@
 }
 
 .hero-content .Contenido h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    color: #000000;
     margin: 0;
     padding: 0;
     text-decoration: none;
     margin-bottom: 1.5rem;
 }
 
+.hero-content .Contenido h3{
+    font-size: 2.5rem;
+    color: #000000;
+}
+
 .hero-content .Contenido p {
-    font-size: 1.2rem; /* Ajusta el tamaño del texto según sea necesario */
-    margin: 0;
-    padding: 0;
+    font-size: 1.8rem; /* Ajusta el tamaño del texto según sea necesario */
+    font-style: italic;
+    padding: 1rem;
 }
 
 .hero-content .PieContenido {
@@ -58,17 +64,17 @@
 }
 
 .ConocenosMain{
-    background-image: url(../fondos/fondo-morado-blanco-mobil.jpg);
+    background-image: url(../fondos/fondo-morado-azul-mobil.jpg);
 }
 
 @media (min-width: 710px) {
     .ConocenosMain{
-        background-image: url(../fondos/fondo-morado-blanco-tablet.jpg);
+        background-image: url(../fondos/fondo-morado-azul-tablet.jpg);
     }
 }
 
 @media (min-width: 1024px){
     .ConocenosMain{
-        background-image: url(../fondos/fondo-morado-blanco-lg.jpg);
+        background-image: url(../fondos/fondo-morado-azul-lg.jpg);
     }
 }
