@@ -46,7 +46,7 @@ let carousel = () => {
         //addNavigator();
         tick();
     }
-
+    /*
     function addNavigator() {
         const navigator = document.createElement('div');
         navigator.classList.add('carousel-navigator');
@@ -73,7 +73,7 @@ let carousel = () => {
         //console.log(dots[index]);
         dots[index].classList.add('active');
     }
-
+*/
     function moveSegmentToIndex() {
 
         clearTimeout(timeOutID);

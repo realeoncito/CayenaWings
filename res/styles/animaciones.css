@@ -62,10 +62,23 @@
 .carouselItem{
     justify-content: center;
     justify-self: center;
+    align-self: center;
     margin: 0 20px;
     
 }
 
+@media(min-width:480px){
+    .carouselItem{
+        margin: 0 40px;
+    }
+}
+
+@media(min-width:1024px){
+    .carouselItem{
+        margin: 0 50px;
+        align-self: auto;
+    }
+}
 
 /*Se manejara a nivel de javascript*/
 .carouselCards.sliding-transition{
