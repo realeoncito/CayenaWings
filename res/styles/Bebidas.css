@@ -7,7 +7,7 @@ body {
 .maincontainer {
     width: 90%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -16,19 +16,23 @@ body {
 .section-title {
     width: 100%;
     text-align: center;
-    margin-bottom: 50px;
-    position: relative; /* Para usar top en la posición */
+    position: relative; /* Para usar top en la posición*/ 
 }
 
-.section-title h1 {
-    font-size: 36px; /* Ajusta el tamaño del texto si es necesario */
+.section-title h1{
+    padding-top: 25px;
+    text-align: center;
+}
+
+/*.section-title h1 {
+    font-size: 36px; /* Ajusta el tamaño del texto si es necesario 
     color: #1f1f1f;
     margin: 0;
     position: absolute;
-    top: 50%; /* Ajusta la posición vertical */
+    top: 50%; /* Ajusta la posición vertical 
     left: 50%;
-    transform: translate(-50%, 40px); /* Centra el texto vertical y horizontalmente */
-}
+    transform: translate(-50%, 40px); /* Centra el texto vertical y horizontalmente 
+}*/
 
 /* Asegúrate de que las secciones se ajusten correctamente */
 .second-section .section {
@@ -56,12 +60,23 @@ body {
     margin-right: 5%;
 }
 
+.section-Bebidas-Naturales h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.section-sodas h2{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .section h2 {
     text-align: center;
     font-size: 24px;
     color: #1f1f1f;
     margin-bottom: 20px;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .cardsMenu {
