@@ -224,28 +224,13 @@ img{
     padding: 2rem;
 }
 
-.CardContainer{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-bottom: 30px;
-    justify-content: center;
-}
-
-.CardContainer h3{
-    display: block;
-    text-align: left;
-
-}
-
 .Card{
     display: flex;
     flex-direction: column;
     margin: 2rem 0 2rem 0;
     /*padding: 1rem;*/
     border: 2px solid black;
-    width: 300px;
+    width: 90vw ;
     /*max-width: 350px;*/
     
     text-align: center;

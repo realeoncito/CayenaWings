@@ -23,7 +23,7 @@ let carousel = () => {
     let currentIndex;
     let timeOutID = null;
 
-    function init(){
+    function init() {
         carouselContainer = document.querySelector(".carouselContainer");
         carousel = document.querySelector(".carouselCards");
         currentIndex = 0;
@@ -42,12 +42,12 @@ let carousel = () => {
 
     }
 
-    function startCarousel(){
-        addNavigator();
+    function startCarousel() {
+        //addNavigator();
         tick();
     }
 
-    function addNavigator(){
+    function addNavigator() {
         const navigator = document.createElement('div');
         navigator.classList.add('carousel-navigator');
         for (let i = 0; i < totalItems; i++) {
@@ -70,39 +70,38 @@ let carousel = () => {
         dots.forEach(dot => {
             dot.classList.remove('active');
         });
-        console.log(dots[index]);
+        //console.log(dots[index]);
         dots[index].classList.add('active');
     }
 
-    function moveSegmentToIndex(index=0){
+    function moveSegmentToIndex() {
+
         clearTimeout(timeOutID);
 
-        if(index === totalItems-2){
-            //carousel.insertAfter(items.index +1, carousel.firstElementChild);
-        }
-        prevIndex = currentIndex;
-        currentIndex = index;
-        //carousel.appendChild(items[prevIndex]);
-        carousel.classList.add('sliding-transition');
-        carousel.style.transform = `translateX(-${index*320}px)`
+        prevIndex = currentIndex
         
-        setDotAsActive(currentIndex);
+        carousel.appendChild(items[prevIndex]);
+        carousel.style.transition = 'none';
+        carousel.style.transform = 'translateX(0px)';
+        currentIndex = (currentIndex + 1) % totalItems;
+       // setDotAsActive(currentIndex);
+        tick();
 
-        setTimeout(() => {
-            carousel.appendChild(items[prevIndex])
-            carousel.style.transform = 'translateX(0)';
-            carousel.classList.remove('sliding-transition');
-        }, 600);
-        //tick();
+
     }
 
-    function tick(){
+    function tick() {
         timeOutID = setTimeout(() => {
-            moveSegmentToIndex(currentIndex + 1);
-            tick();
-        }, 5000);
+            carousel.style.transition = 'transform 1s ease-in-out';
+            carousel.style.transform = 'translateX(-100vw)';
+            setTimeout(() => {
+                
+                moveSegmentToIndex();
+            }, 1000);
+            //tick();
+        }, 4000);
     }
 
     init();
-    
+
 }

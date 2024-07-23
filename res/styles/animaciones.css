@@ -44,24 +44,32 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 50vh;
-    /*width: 90%;*/
+    height: 30vh;
+    width: 100vw;
     overflow: hidden;
+    justify-self: center;
 }
 
 
 .carouselCards{
     display: flex;
-    gap: 20px;
+    
+    transition: transform 0.8s ease-in-out;
+    justify-content: center;
+    justify-self: center;
 }
 
-#firstCard{
-    margin-left: 10px;
+.carouselItem{
+    justify-content: center;
+    justify-self: center;
+    margin: 0 20px;
+    
 }
+
 
 /*Se manejara a nivel de javascript*/
 .carouselCards.sliding-transition{
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
 /*Elementos visuales de la navegacion*/
