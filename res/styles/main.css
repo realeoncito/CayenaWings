@@ -128,7 +128,7 @@ img{
     /*width: 50%;*/
     display: block;
     text-align: center;
-    padding: 2rem;
+    padding: 0;
 
 }
 
@@ -170,26 +170,7 @@ img{
 }
 
 
-/*Punto de corte de mobile a resoluciones mas grandes.*/
-@media(min-width: 480px){
-    .heroPanel{
-       height: fit-content;
-        
-    }
 
-    .heroPanel .Container{
-        height: 100%;
-        width: 50%;
-    }
-
-    .heroPanel .Container .Contenido{
-        display: flex;
-        align-items: center;
-        height: fit-content;
-
-    }
-
-}
 
 /*
 .heroPanel .Container .Contenido .NombrePie div{
@@ -224,32 +205,22 @@ img{
     padding: 2rem;
 }
 
-.CardContainer{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-bottom: 30px;
-    justify-content: center;
-}
-
-.CardContainer h3{
-    display: block;
-    text-align: left;
-
-}
-
 .Card{
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 2rem 0 2rem 0;
+    /*padding: 1rem;*/
     border: 2px solid black;
-    max-width: 350px;
+    width: 90vw ;
+    /*max-width: 350px;*/
     
     text-align: center;
     height: fit-content;
+    /*min-height: 80px;
+    max-height: 80px;*/
     align-items: center;
 }
+
 
 .Contenido{
     padding: 1rem;
@@ -274,6 +245,47 @@ img{
     margin-top: 100px;
     text-align: center;
 
+
+}
+
+/*Punto de corte de mobile a resoluciones mas grandes.*/
+@media(min-width: 480px){
+    .heroPanel{
+       height: 60vh;
+    }
+
+    .heroPanel .Container{
+        height: 100%;
+        width: 50%;
+    }
+
+    .heroPanel .Container .Contenido{
+        display: flex;
+        align-items: center;
+        height: 40vh;
+        align-self: center;
+
+        p{
+            font-size: 24px;
+        }
+        h3{
+            font-size: 22px;
+        }
+
+    }
+
+    .Testimonios{
+        font-size: 34px;
+    }
+
+    .Card p{
+        font-size: 24px;
+    }
+
+    .Card .NombrePie{
+        font-size: 22px;
+
+    }
 
 }
 /*Revisar vision en movil del footer.*/
