@@ -20,6 +20,12 @@ body {
     background-repeat: no-repeat;
 }*/
 
+.error {
+    color: red;
+    font-size: 0.9em;
+    min-height: 2em; 
+}
+
 .IndexContact{
     position: relative;
     flex: 1;
@@ -52,7 +58,7 @@ body {
 }
 .contact-form {
     text-align: center;
-    max-width: 600px;
+    /*max-width: 600px;*/
     margin: auto;
     padding: 20px;
 }
@@ -84,6 +90,13 @@ body {
     flex: 1;
     padding: 0 10px;
     background-color: transparent;
+    position: relative;
+}
+
+.Formulario .error {
+    top: 100%;
+    left: 0; 
+    width: 100%;
 }
 
 label {
@@ -102,6 +115,7 @@ textarea {
     border-bottom: 2px solid black;
     outline: none;
     margin-bottom: 20px;
+    font-family: Arial, sans-serif;
 }
 
 textarea {
