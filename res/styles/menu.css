@@ -7,21 +7,6 @@ body{
     background-size: contain; 
     background-repeat: repeat; 
 }
-.carousel-container{ 
-    position: relative;
-    width:100vw;
-    height: 50vh;
-    overflow: hidden;
-}
-.carousel-track {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    top:0;
-    left:0;
-    height: 50vh;
-    transition: transform 1s ease-in-out;
-}
 .heroPanel{
     position: relative;
     width: 100vw;
@@ -54,14 +39,16 @@ body{
     box-sizing: border-box;
 }
 .heroPanel .hero-info h2{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     margin: 0 0 40px 0;
     text-shadow: 0 0 8px #000000;
 }
 .heroPanel .hero-info p{
-    font-size: 1.1rem;
-    text-shadow: 0 0 8px #414141;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #cdc1c1;
 }
 .container-cards{
     width: 100%;
