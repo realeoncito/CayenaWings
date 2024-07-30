@@ -116,6 +116,7 @@ textarea {
     outline: none;
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
+    background: none;
 }
 
 textarea {
