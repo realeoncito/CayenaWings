@@ -37,3 +37,77 @@
         transform: rotate(360deg);
     }
 }
+
+/*Definicion de los elementos del carrusel*/
+
+.carouselContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    width: 100vw;
+    overflow: hidden;
+    justify-self: center;
+}
+
+
+.carouselCards{
+    display: flex;
+    
+    transition: transform 0.8s ease-in-out;
+    justify-content: center;
+    justify-self: center;
+}
+
+.carouselItem{
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    margin: 0 20px;
+    
+}
+
+@media(min-width:480px){
+    .carouselItem{
+        margin: 0 40px;
+    }
+}
+
+@media(min-width:1024px){
+    .carouselItem{
+        margin: 0 50px;
+        align-self: auto;
+    }
+}
+
+/*Se manejara a nivel de javascript*/
+.carouselCards.sliding-transition{
+    transition: transform 0.8s ease-in-out;
+}
+
+/*Elementos visuales de la navegacion*/
+.carousel-navigator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.carousel-navigator-dot{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #FFF;
+    padding: 0.3rem;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.carousel-navigator-dot.active {
+    background-color: #F00;
+}
