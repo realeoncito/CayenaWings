@@ -55,7 +55,7 @@
 }
 
 .Back-Purple-Gradient{
-    background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Green));
+    background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Black),var(--Black));
 }
 
 .Back-BlackWhite-Gradient{
