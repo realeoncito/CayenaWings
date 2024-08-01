@@ -58,6 +58,10 @@
     background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Green));
 }
 
+.Back-BlackWhite-Gradient{
+    background: linear-gradient(to right, var(--Black), var(--Purple), #878787, var(--Black));
+}
+
 /* Fondo con transparencia */
 .FondoBlanco{
     background-color: rgba(255, 255, 255, 0.835);
