@@ -36,7 +36,7 @@
     max-height: 210px;
     display: grid;
     grid-template-columns: auto auto;
-    background-color: blue;
+    background-color: black;
 }
 
 .content{
@@ -104,4 +104,8 @@
     .content{
         width: 300px;
     }
+}
+
+.aderezo{
+    width: unset !important;
 }
