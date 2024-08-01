@@ -41,8 +41,9 @@ header nav a{
 }
 
 .logo{
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
+    margin: 0 1rem;
 }
 
 header nav div h1{
