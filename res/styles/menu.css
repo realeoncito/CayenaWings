@@ -66,6 +66,12 @@ body{
     position: relative;
     box-shadow: 0 0 10px #000000;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.container-cards .cards:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 12px #7bc2f5;
 }
 .container-cards .cards img{
     position: absolute;
@@ -86,24 +92,10 @@ body{
     color: black;
     border: 1px solid #aeaeae;
     border-radius: 4px;
+    font-style: italic;
 }
 
-@media(min-width: 480px){
-    .container-cards .card-5{
-        width: 460px;
-    }
-    .container-cards .card-5 a{
-        left: 170px;
-    }
-}
 @media(min-width: 1000px){
-    .container-cards .card-5{
-        width: 220px;
-        height: 220px;
-    }
-    .container-cards .card-5 a{
-        left: 50px;
-    }
     .container-cards{
         height: 80vh;
     }
