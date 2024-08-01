@@ -84,8 +84,6 @@
 .Color-DarkBlue{
     color: var(--Back-DarkBlue);
 }
-
-
 .Color-Green{
     color: var(--Green);
 }
@@ -93,4 +91,21 @@
 .Color-Purple{
     columns: var(--Purple);
 
+}
+.Color-Red{
+    color: #f03a3a;
+}
+
+/* Colores promociones */
+
+.Color-Orange{
+    color: #FFA500;
+}
+
+.Color-Gold{
+color: #FFD700;
+}
+
+.Color-Brown{
+color: #CD853F;
 }

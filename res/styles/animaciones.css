@@ -49,11 +49,12 @@
     overflow: hidden;
     justify-self: center;
 }
-
+.carouselContainer.carouselImages{
+    height: 50vh;
+}
 
 .carouselCards{
     display: flex;
-    
     transition: transform 0.8s ease-in-out;
     justify-content: center;
     justify-self: center;
@@ -63,10 +64,12 @@
     justify-content: center;
     justify-self: center;
     align-self: center;
-    margin: 0 5vw 0 5vw;
-    
+    margin: 0 5vw 0 5vw;   
 }
 
+.carouselItem.heroPanel{
+    margin: 0;
+}
 
 
 /*Se manejara a nivel de javascript*/
