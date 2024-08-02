@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .fullimage img{
@@ -40,9 +41,14 @@ header nav a{
     align-items: center;
 }
 
+.dropbtn{
+    background-color: transparent;
+}
+
 .logo{
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
+    margin: 0 1rem;
 }
 
 header nav div h1{
@@ -64,6 +70,106 @@ header nav ul{
     height: 64px;
     width: 64px;
 }
+
+header nav ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 0px;
+    overflow: hidden;
+    z-index: 5000;
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    background-color: black;
+    transition: height 0.3s ease-in-out;
+}
+
+.submenu{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 0px;
+    overflow: hidden;
+    z-index: 5000;
+    background-color: black;
+    transition: height 0.3s ease-in-out;
+    position: inherit;
+}
+
+header nav ul li{
+    display: flex;
+    border-top: gray 1px solid;
+    height: max-content;
+}
+
+header nav ul li a,header nav ul li label, .dropbtn{
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 4rem;
+}
+
+header nav ul li label{
+    color: white;
+    transform: rotate(90deg);
+}
+
+header nav input{
+    display: none;
+}
+
+
+header nav input[id="hamburguesa"]:checked~ul{
+    height: max-content;
+}
+
+header nav input[id*="submenu"]:checked~ul{
+    height: 12rem;
+}
+
+header nav input[id*="submenu"]:checked~label{
+    transform: rotate(0deg);
+}
+
+.expandir{
+    transition: transform ease-in-out 0.2s;
+}
+
+/* Dropdown menu */
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100%;
+    z-index: 1;
+    top: 48px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
 
 /* punto de quiebre 910px */
 
@@ -339,40 +445,6 @@ footer{
 /*Media Queries*/
 
 @media (min-width: 710px) {
-    .menu_hamburguesa{
-        display: none;
-    }
-
-    header nav ul{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 30px;
-        padding: 0;
-    }
-    
-    header nav ul li{
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    
-    header nav ul li a{
-        font-size: 25px;
-        padding: 0.8rem 1rem;
-        font-weight: bold;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    .HeaderTestimonios{
-        display: none;
-    }
-
-    .HeaderFormar{
-        display: none;
-    }
 
     .footer-seccion2 h3, p{
         display: flex;
@@ -392,19 +464,44 @@ footer{
 }
 
 @media (min-width:1024px) {
-
-    .HeaderTestimonios{
-        display: flex;
+    .hide{
+        display: none;
     }
 
-    .HeaderFormar{
+    .menu_hamburguesa{
+        display: none;
+    }
+
+    header nav ul{
+        padding: 0rem;
         display: flex;
-        background-color: white;  
-        color: black;
-        padding: 0 15px 0 15px;
+        flex-direction: row;
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        height: auto;
+        background-color: transparent;
         align-items: center;
-        justify-content: center;
-        /* trbl */
+        justify-content: flex-end;
+        gap: 30px;
+    }
+    
+    header nav ul li{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: none;
+    }
+    
+    header nav ul li a, .dropbtn{
+        font-size: 25px;
+        padding: 0.8rem 1rem;
+        font-weight: bold;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: none;
     }
 
     .footer-seccion3{

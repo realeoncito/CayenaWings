@@ -55,7 +55,11 @@
 }
 
 .Back-Purple-Gradient{
-    background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Green));
+    background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Black),var(--Black));
+}
+
+.Back-BlackWhite-Gradient{
+    background: linear-gradient(to right, var(--Black), var(--Purple), #878787, var(--Black));
 }
 
 /* Fondo con transparencia */

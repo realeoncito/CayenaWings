@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    position: relative; /* Para usar top en la posición*/ 
+}
+
+.section-title h1{
+    padding-top: 25px;
+    text-align: center;
+}
+
+/*.section-title h1 {
+    font-size: 36px; /* Ajusta el tamaño del texto si es necesario 
+    color: #1f1f1f;
+    margin: 0;
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical 
+    left: 50%;
+    transform: translate(-50%, 40px); /* Centra el texto vertical y horizontalmente 
+}*/
+
+/* Asegúrate de que las secciones se ajusten correctamente */
+.second-section .section {
+    width: 100%;
+}
+
+.section {
+    width: 45%;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.two-column-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las dos columnas */
+}
+
+.column {
+    width: 48%; /* Ajusta el ancho para que las dos columnas se ajusten al contenedor */
+}
+
+.section.left {
+    margin-right: 5%;
+}
+
+.section-Bebidas-Naturales h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.section-sodas h2{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+}
+
+.cardsMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 2;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content-titulo {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.content-precio {
+    color: #E4432F;
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+}
+
+.content-imagen {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.content-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-section .section {
+    width: 22%;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+    .maincontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section.left,
+    .section.right {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .second-section .section {
+        width: 100%;
+    }
+
+    .second-section .cardsMenu {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .maincontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section.left,
+    .section.right {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .second-section .section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .second-section .cardsMenu {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .maincontainer {
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section.left,
+    .section.right,
+    .second-section .section {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
+    }
+
+    .section-title h1 {
+        font-size: 28px;
+    }
+
+    .cardsMenu {
+        flex-direction: column;
+    }
+
+    .card {
+        height: auto; /* Ajusta la altura de las tarjetas en pantallas pequeñas */
+        flex-direction: column;
+    }
+
+    .content-imagen img {
+        height: auto; /* Asegúrate de que las imágenes se ajusten correctamente */
+    }
+}
+
+

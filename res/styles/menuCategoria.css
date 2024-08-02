@@ -1,6 +1,6 @@
 .IndexMain{
     background-image: none;
-    background-color: black;
+    background-color: #EAE8DF;
 }
 
 .maincontainer{
@@ -20,7 +20,7 @@
 
 .maincontainer h2 img{
     width: 70%;
-    height: 50px;
+    height: 70px;
 }
 
 .cardsMenu{
@@ -36,12 +36,12 @@
     max-height: 210px;
     display: grid;
     grid-template-columns: auto auto;
-    background-color: blue;
+    background-color: black;
 }
 
 .content{
     width: 225px;
-    background-color: #1f1f1f;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +58,7 @@
 .content-precio{
     color: #E4432F;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .content-button{
@@ -105,8 +106,6 @@
     }
 }
 
-@media (min-width: 1024px) {
-    .maincontainer h2 img{
-        height: 70px;
-    }
+.aderezo{
+    width: unset !important;
 }
