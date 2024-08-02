@@ -10,7 +10,8 @@ function cargando() {
         setTimeout(() => {
             carga.style.visibility = "hidden";
         }, 2000);
-    }, 2000);
+    }, //2000
+    );
     carousel();
 }
 
