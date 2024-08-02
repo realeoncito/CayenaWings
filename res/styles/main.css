@@ -126,7 +126,7 @@ header nav input[id="hamburguesa"]:checked~ul{
 }
 
 header nav input[id*="submenu"]:checked~ul{
-    height: 12rem;
+    height: min-content;
 }
 
 header nav input[id*="submenu"]:checked~label{
@@ -148,7 +148,7 @@ header nav input[id*="submenu"]:checked~label{
     background-color: black;
     min-width: 100%;
     z-index: 1;
-    top: 48px;
+    top: 64px;
 }
 
 .dropdown-content a {
