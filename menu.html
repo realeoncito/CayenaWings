@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cayena Wings - Menú</title>
     <link rel="stylesheet" href="res/styles/main.css" />
-    <link rel="stylesheet" href="res/styles/menu.css" />
+    <link rel="stylesheet" href="res/styles/animaciones.css" />
     <link rel="stylesheet" href="res/styles/colors.css" />
-    <link rel="stylesheet" href="res/styles/animaciones.css">
+    <link rel="stylesheet" href="res/styles/menu.css" />
     <script src="js/animaciones.js"></script>
   </head>
+
   <body>
     <header class="Back-LightBlue-Gradient">
       <!--Se deja el logo dentro del nav porque llevara a la pagina principal.-->
@@ -18,14 +19,60 @@
         <a href="index.html">
           <img
             class="logo"
-            src="res/logos/azul-blanco.jpg"
+            src="res/logos/logo-azul.png"
             alt="Logo Cayena Salmon"
           />
           <h1 class="Color-Black">Cayena Wings</h1>
         </a>
+        <input id="hamburguesa" type="checkbox" />
         <ul>
           <li>
-            <a href="menu.html" class="HeaderMenu Color-LightBlue">Menú</a>
+            <div class="dropdown">
+              <a
+                class="dropbtn HeaderAcerca Color-WhiteSmoke"
+                href="../menu.html"
+                >Menú</a
+              >
+              <div class="dropdown-content">
+                <a href="Menu/AddOns.html">Acompañantes</a>
+                <a href="Menu/Alitas.html">Alitas</a>
+                <a href="Menu/Bebidas.html">Bebidas</a>
+                <a href="Menu/Cocteles.html">Cocteles</a>
+                <a href="Menu/Hamburguesas.html">Hamburguesas</a>
+                <a href="Menu/Platillos.html">Platillos</a>
+              </div>
+            </div>
+
+            <input type="checkbox" id="submenu-menu" />
+            <label class="expandir hide" for="submenu-menu">></label>
+            <ul class="submenu hide">
+              <li>
+                <a href="Menu/AddOns.html" class="Color-WhiteSmoke"
+                  >Acompañantes</a
+                >
+              </li>
+              <li>
+                <a href="Menu/Alitas.html" class="Color-WhiteSmoke">Alitas</a>
+              </li>
+              <li>
+                <a href="Menu/Bebidas.html" class="Color-WhiteSmoke">Bebidas</a>
+              </li>
+              <li>
+                <a href="Menu/Cocteles.html" class="Color-WhiteSmoke"
+                  >Cocteles</a
+                >
+              </li>
+              <li>
+                <a href="Menu/Hamburguesas.html" class="Color-WhiteSmoke"
+                  >Hamburguesas</a
+                >
+              </li>
+              <li>
+                <a href="Menu/Platillos.html" class="Color-WhiteSmoke"
+                  >Platillos</a
+                >
+              </li>
+            </ul>
           </li>
           <li>
             <a
@@ -35,114 +82,216 @@
             >
           </li>
           <li>
-            <a href="conocenos.html" class="HeaderAcerca Color-WhiteSmoke"
-              >Acerca de Nosotros</a
-            >
+            <div class="dropdown">
+              <a class="dropbtn HeaderAcerca Color-WhiteSmoke"
+                >Acerca de Nosotros</a
+              >
+              <div class="dropdown-content">
+                <a href="conocenos.html">Conocenos</a>
+                <a href="contactanos.html">Contáctanos</a>
+                <a href="ubicacion.html">Ubicación</a>
+              </div>
+            </div>
+
+            <input type="checkbox" id="submenu-acerca" />
+            <label class="expandir hide" for="submenu-acerca">></label>
+            <ul class="submenu hide">
+              <li>
+                <a href="conocenos.html" class="Color-WhiteSmoke">Conocenos</a>
+              </li>
+              <li>
+                <a href="ubicacion.html" class="Color-WhiteSmoke">Ubicación</a>
+              </li>
+              <li>
+                <a href="contactanos.html" class="Color-WhiteSmoke"
+                  >Contáctanos</a
+                >
+              </li>
+            </ul>
           </li>
         </ul>
         <div class="menu_hamburguesa">
-          <img src="./res/iconos/menu_hamburguesa.png" alt="Menú" />
+          <label for="hamburguesa">
+            <img
+              for="hamburguesa"
+              src="./res/iconos/menu_hamburguesa.png"
+              alt="Menú"
+            />
+          </label>
         </div>
       </nav>
     </header>
 
     <main class="IndexMain">
-      <section class="heroPanel">
-        <img
-          src="/res/img/FotosMenu/Menu_Promociones.jpeg"
-          alt="Imagen Promocion"
-        />
-        <div class="hero-info">
-          <h2 class="Color-WhiteSmoke">¡SLIDER PROMOCIONES!</h2>
-          <div class="slider">
-            <div class="item Back-LightBlue"></div>
-            <div class="item Back-WhiteSmoke"></div>
-            <div class="item Back-WhiteSmoke"></div>
-            <div class="item Back-WhiteSmoke"></div>
-          </div>
-        </div>
+      <section class="carouselContainer carouselImages">
+        <section class="carouselCards">
+          <section class="heroPanel carouselItem">
+            <img
+              src="./res/img/FotosMenu/Menu_Promociones/Promo4.jpeg"
+              alt="Imágen Promoción"
+            />
+            <div class="hero-info">
+              <h2 class="Color-WhiteSmoke">
+                Crispy Chicken <span class="Color-Gold">Boneless</span>
+              </h2>
+              <p class="Color-WhiteSmoke">
+                Crujiente pechuga de pollo, empanizadas a mano, bañadas en
+                cualquiera de nuestras jugosas salsas.
+              </p>
+            </div>
+          </section>
+          <section class="heroPanel carouselItem">
+            <img
+              src="./res/img/FotosMenu/Menu_Promociones/Promo2.jpeg"
+              alt="Imágen Promoción"
+            />
+            <div class="hero-info">
+              <h2 class="Color-WhiteSmoke">
+                Dolce <span class="Color-Brown">Angus</span>
+              </h2>
+              <p class="Color-WhiteSmoke">
+                Hamburguesa de carne 100% angus con cebolla caramelizada, bacon
+                & queso americano gratinado.
+              </p>
+            </div>
+          </section>
+          <section class="heroPanel carouselItem">
+            <img
+              src="./res/img/FotosMenu/Menu_Promociones/Promo3.jpeg"
+              alt="Imágen Promoción"
+            />
+            <div class="hero-info">
+              <h2 class="Color-WhiteSmoke">
+                Chicken <span class="Color-Orange">wings</span> honey mustard
+              </h2>
+              <p class="Color-WhiteSmoke">
+                Crujiente alitas de pollo, empanizadas a mano, bañadas en
+                cualquiera de nuestras jugosas salsas.
+              </p>
+            </div>
+          </section>
+          <section class="heroPanel carouselItem">
+            <img
+              src="./res/img/FotosMenu/Menu_Promociones/Promo5.jpeg"
+              alt="Imágen Promoción"
+            />
+            <div class="hero-info">
+              <h2 class="Color-WhiteSmoke">
+                Loaded Popcorn <span class="Color-Red">Chicken</span>
+              </h2>
+              <p class="Color-WhiteSmoke">
+                Doradas & crujientes palomitas de pollo, sobre una cama de papas
+                fritas perfectamente sazonadas.
+              </p>
+            </div>
+          </section>
+        </section>
       </section>
 
       <section class="container-cards">
-        <div class="cards card-1" onclick="window.location.href = './Menu/Hamburguesas.html'">
+        <div
+          class="cards card-1"
+          onclick="window.location.href = './Menu/Hamburguesas.html'"
+        >
           <img
             src="res/img/FotosMenu/Menu_Hamburguesas.jpeg"
             alt="Imagen tarjeta"
           />
-          <a class="Back-WhiteSmoke" href="./Menu/Hamburguesas.html">Hamburguesas</a>
+          <a class="Back-WhiteSmoke" href="./Menu/Hamburguesas.html"
+            >Hamburguesas</a
+          >
         </div>
-        <div class="cards card-2">
+        <div
+          class="cards card-2"
+          onclick="window.location.href = './Menu/Bebidas.html'"
+        >
           <img src="res/img/FotosMenu/Menu_Bebidas.jpeg" alt="Imagen tarjeta" />
           <a class="Back-WhiteSmoke" href="#">Bebidas</a>
         </div>
-        <div class="cards card-3">
+        <div
+          class="cards card-3"
+          onclick="window.location.href = './Menu/Alitas.html'"
+        >
           <img src="res/img/FotosMenu/Menu_Alitas.jpeg" alt="Imagen tarjeta" />
           <a class="Back-WhiteSmoke" href="#">Alitas</a>
         </div>
-        <div class="cards card-4">
+        <div
+          class="cards card-4"
+          onclick="window.location.href = './Menu/AddOns.html'"
+        >
           <img
             src="res/img/FotosMenu/Menu_Aperitivos.jpeg"
             alt="Imagen tarjeta"
           />
           <a class="Back-WhiteSmoke" href="#">Acompañantes</a>
         </div>
-        <div class="cards card-5">
-          <img src="res/img/FotosLanding/mobil/menu.jpg" alt="Imagen tarjeta" />
+        <div
+          class="cards card-5"
+          onclick="window.location.href = './Menu/Platillos.html'"
+        >
+          <img
+            src="res/img/FotosMenu/Menu_Promociones/Promo5.jpeg"
+            alt="Imagen tarjeta"
+          />
           <a class="Back-WhiteSmoke" href="#">Platillos</a>
+        </div>
+        <div
+          class="cards card-6"
+          onclick="window.location.href = './Menu/Cocteles.html'"
+        >
+          <img
+            src="res/img/FotosMenu/Menu_Promociones.jpeg"
+            alt="Imagen tarjeta"
+          />
+          <a class="Back-WhiteSmoke" href="#">Cocteles</a>
         </div>
       </section>
     </main>
 
     <footer class="Back-Black">
-
       <div class="footer-seccion1">
-          <h2 class="Color-WhiteSmoke">Contáctanos</h2>
-          <div class="footer-seccion2">
-              <div class="footer-seccion3">
-              <img src="./res/iconos/telefono.png" alt="telefono">
-                  <div>
-                      <h3 class="Color-WhiteSmoke">Teléfono</h3>
-                      <p class="Color-WhiteSmoke">9451-8797</p>
-                  </div>
-              </div>
-              <a href="ubicacion.html">
-                  <div class="footer-seccion3">
-                      <img src="./res/iconos/ubicacion.png" alt="Ubicacion">
-                          <div>
-                              <h3 class="Color-WhiteSmoke">Ubicación</h3>
-                              <p class="Color-WhiteSmoke">Contiguo Inst. Enma Romero, Siguatepeque, Honduras</p>
-                          </div>
-                      </div>
-              </a>
-              
-          </div>
+        <h2 class="Color-WhiteSmoke">Contáctanos</h2>
+        <div class="footer-seccion2">
+          <a href="https://wa.me/50494518797" target="_blank">
+            <div class="footer-seccion3">
+              <img src="./res/iconos/whatsapp.svg" alt="telefono" />
+            </div>
+          </a>
+          <a href="ubicacion.html">
+            <div class="footer-seccion3">
+              <img src="./res/iconos/ubicacion.png" alt="Ubicacion" />
+            </div>
+          </a>
+        </div>
       </div>
-
       <div class="footer-seccion1">
-          <h2 class="Color-WhiteSmoke redes">Síguenos</h2>
-          <div class="footer-seccion2">
-              <div>
-                  <a href="https://www.facebook.com/search/top?q=cayena%20hn&locale=hr_HR" target="_blank">
-                      <img src="./res/iconos/facebook.png" alt="Facebook">
-                      <p class="Color-WhiteSmoke">Cayena HN</p>
-                  </a>
-              </div>
-              <div>
-                  <a href="https://www.instagram.com/cayenahn?igsh=MTcwdjk0MXoxbHpsZw==" target="_blank">
-                      <img src="./res/iconos/instagram.png" alt="Instagram">
-                      <p class="Color-WhiteSmoke">Cayena HN</p>
-                  </a>
-              </div>
+        <h2 class="Color-WhiteSmoke redes">Síguenos</h2>
+        <div class="footer-seccion2">
+          <div>
+            <a
+              href="https://www.facebook.com/search/top?q=cayena%20hn&locale=hr_HR"
+              target="_blank"
+            >
+              <img src="./res/iconos/facebook.png" alt="Facebook" />
+            </a>
           </div>
+          <div>
+            <a
+              href="https://www.instagram.com/cayenahn?igsh=MTcwdjk0MXoxbHpsZw=="
+              target="_blank"
+            >
+              <img src="./res/iconos/instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
       </div>
+    </footer>
 
-  </footer>
-
-  <aside>
-    <div class="cargando">
-        <img src="res/iconos/loading-azulOscuro.png" alt="Cargando">
-        <img src="res/logos/transparente-azulOscuro.png" alt="">
-    </div>
-</aside>
+    <aside>
+      <div class="cargando">
+        <img src="res/iconos/loading-azulOscuro.png" alt="Cargando" />
+        <img src="res/logos/transparente-azulOscuro.png" alt="" />
+      </div>
+    </aside>
   </body>
 </html>

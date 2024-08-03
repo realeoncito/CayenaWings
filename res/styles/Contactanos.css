@@ -14,16 +14,51 @@ body {
     flex-direction: column;
 }
 
-.IndexMain{
+/*.IndexContact{
     background-image: url(../fondos/Fondo-verdeEscalado.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    /*background-size: cover; 
+    background-repeat: no-repeat;
+}*/
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    min-height: 2em; 
 }
 
+.IndexContact{
+    position: relative;
+    flex: 1;
+}
 
+.IndexContact .Container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.IndexContact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../fondos/Fondo-verdeEscalado.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+}
 .contact-form {
     text-align: center;
-    max-width: 600px;
+    /*max-width: 600px;*/
     margin: auto;
     padding: 20px;
 }
@@ -55,6 +90,13 @@ body {
     flex: 1;
     padding: 0 10px;
     background-color: transparent;
+    position: relative;
+}
+
+.Formulario .error {
+    top: 100%;
+    left: 0; 
+    width: 100%;
 }
 
 label {
@@ -73,6 +115,8 @@ textarea {
     border-bottom: 2px solid black;
     outline: none;
     margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    background: none;
 }
 
 textarea {
@@ -93,6 +137,10 @@ button {
 
 button:hover {
     background-color: #c4e502;
+}
+
+.dropbtn:hover{
+    background-color: transparent;
 }
 
 .hamburger-menu {

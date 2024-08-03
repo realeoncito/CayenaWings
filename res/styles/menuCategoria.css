@@ -1,6 +1,11 @@
 .IndexMain{
+    background-image: url(/res/fondos/fondo-blanco.jpg);
+    object-fit: cover;
+    background-size: contain;
+    /*
     background-image: none;
-    background-color: black;
+    background-color: #EAE8DF;
+    */
 }
 
 .maincontainer{
@@ -18,9 +23,17 @@
     justify-content: center;
 }
 
+.titulos{
+    font-size: 3rem;
+}
+
+.maincontainer .sodas{
+    height: 110px;
+}
+
 .maincontainer h2 img{
     width: 70%;
-    height: 50px;
+    height: 70px;
 }
 
 .cardsMenu{
@@ -31,17 +44,16 @@
 }
 
 .card{
-    width: 400px;
+    width: 87vw;
     height: 210px;
     max-height: 210px;
     display: grid;
-    grid-template-columns: auto auto;
-    background-color: blue;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
 }
 
 .content{
-    width: 225px;
-    background-color: #1f1f1f;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +70,7 @@
 .content-precio{
     color: #E4432F;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .content-button{
@@ -90,6 +103,12 @@
     border-top: 2px solid white;
 }
 
+@media(min-width: 1300px){
+    .fullView{
+        height: 90vh;
+    }
+}
+
 @media (min-width: 600px){
     .cardsMenu{
         justify-content: center;
@@ -105,8 +124,17 @@
     }
 }
 
-@media (min-width: 1024px) {
-    .maincontainer h2 img{
-        height: 70px;
+@media (max-width: 400px) {
+    .card{
+        width: 87vw;
+        grid-template-columns: 1fr 1fr;
     }
+
+    .content{
+        width: unset;
+    }
+}
+
+.aderezo{
+    width: unset !important;
 }

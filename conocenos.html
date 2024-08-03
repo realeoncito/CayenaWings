@@ -1,135 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="./res/icon.png"/>
+    <link rel="icon" type="image/x-icon" href="./res/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./res/styles/main.css">
     <link rel="stylesheet" href="res/styles/colors.css">
     <link rel="stylesheet" href="res/styles/animaciones.css">
     <script src="js/animaciones.js"></script>
-    <title>Conocenos</title>
+    <title>Cayena Wings - Conócenos</title>
 </head>
+
 <body>
-    <header class="Back-Black-Gradient">
+    <header class="Back-LightBlue-Gradient">
         <nav>
             <a href="index.html">
-                <img class="logo" src="res/logos/negro-azulOscuro.jpg" alt="Logo Cayena Azul Oscuro"/>
-                <h1 class="Color-WhiteSmoke">Cayena Wings</h1>
+                <img class="logo" src="res/logos/logo-morado.png" alt="Logo Cayena Azul Oscuro" />
+                <h1 class="Color-Black">Cayena Wings</h1>
             </a>
-
+            <input id="hamburguesa" type="checkbox">
             <ul>
-                <li><a href="menu.html" class="HeaderMenu Color-WhiteSmoke">Menú</a></li>
-                <li><a href="testimonios.html" class="HeaderTestimonios Color-WhiteSmoke ">Testimonios</a></li>
-                <li><a href="conocenos.html" class="HeaderAcerca Color-WhiteSmoke">Acerca de Nosotros</a></li>
-                
-            </ul>
-        </nav>
-
-    </header>
-
-    <main>
-
-        <section class="heroPanel">
-            <div class="Container">
-                <img src="res/fondos/morado-blanco.jpg" alt="fondo morado y blanco" />
-
-                <div class="Contenido FondoMorado">
-                    <h2>Quienes Somos</h2>
-                    <p>"Deliciosas, adictivas, incomparables. Una experiencia altamente recomendable. No solo ofrecen las
-                        mejores alitas
-                        sino que también cuentan con un ambiente muy acogedor. La realación calidad-precio es
-                        excelente."
-                    </p>
-                    <div class="NombrePie">
-                        <img src="res/icon.png" alt="foto de cliente">
-                        <span>
-                            <h3>Baby Gravy</h3>
-                            <p>@_callmegravy</p>
-                        </span>
-
+                <li>
+                    <div class="dropdown">
+                         <a class="dropbtn HeaderAcerca Color-WhiteSmoke" href="../menu.html">Menú</a>
+                        <div class="dropdown-content">
+                            <a href="Menu/AddOns.html">Acompañantes</a>
+                            <a href="Menu/Alitas.html">Alitas</a>
+                            <a href="Menu/Bebidas.html">Bebidas</a>
+                            <a href="Menu/Cocteles.html">Cocteles</a>
+                            <a href="Menu/Hamburguesas.html">Hamburguesas</a>
+                            <a href="Menu/Platillos.html">Platillos</a>
+                        </div>
                     </div>
-                </div>
+
+                    <input type="checkbox" id="submenu-menu">
+                    <label class="expandir hide" for="submenu-menu">></label>
+                    <ul class="submenu hide">
+                        <li><a href="Menu/AddOns.html" class="Color-WhiteSmoke">Acompañantes</a></li>
+                        <li><a href="Menu/Alitas.html" class="Color-WhiteSmoke">Alitas</a></li>
+                        <li><a href="Menu/Bebidas.html" class="Color-WhiteSmoke">Bebidas</a></li>
+                        <li><a href="Menu/Cocteles.html" class="Color-WhiteSmoke">Cocteles</a></li>
+                        <li><a href="Menu/Hamburguesas.html" class="Color-WhiteSmoke">Hamburguesas</a></li>
+                        <li><a href="Menu/Platillos.html" class="Color-WhiteSmoke">Platillos</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="testimonios.html" class="HeaderTestimonios Color-WhiteSmoke ">Testimonios</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn HeaderAcerca Color-WhiteSmoke">Acerca de Nosotros</a>
+                        <div class="dropdown-content">
+                            <a href="conocenos.html">Conócenos</a>
+                            <a href="contactanos.html">Contáctanos</a>
+                            <a href="ubicacion.html">Ubicación</a>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" id="submenu-acerca">
+                    <label class="expandir hide" for="submenu-acerca">></label>
+                    <ul class="submenu hide">
+                        <li><a href="conocenos.html" class="Color-WhiteSmoke">Conocenos</a></li>
+                        <li><a href="ubicacion.html" class="Color-WhiteSmoke">Ubicación</a></li>
+                        <li><a href="contactanos.html" class="Color-WhiteSmoke">Contáctanos</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="menu_hamburguesa">
+                <label for="hamburguesa">
+                    <img for="hamburguesa" src="./res/iconos/menu_hamburguesa.png" alt="Menú" />
+                </label>
             </div>
+        </nav>
+    </header>
+    <main class="IndexMain">
+        <section class="heroBanner">
 
+            <picture>
+                <source srcset="./res/img/FotosConocenos/tablet-lg/fondo-conocenos-lg.jpg"
+                    media="(min-width: 1024px)" />
+                <source srcset="res/img/FotosConocenos/tablet/fondo-conocenos-tablet.jpg" media="(min-width: 1024px)" />
+
+                <img src="res/img/FotosConocenos/mobil/fondo-conocenos-mobil.jpg" alt="Hamburguesa Cayena" />
+
+            </picture>
+
+            <div class="heroBannerInfo">
+                
+                <h2>¿Quiénes Somos?</h2>
+                <p class="Color-Black FondoBlanco">
+                    Cayena Wings es una empresa 100% hondureña que nace en el corazón del país, el
+                    altiplano central de Honduras; Siguatepeque. <br/>
+                    Nos caracterizamos por dar una atención de la más alta calidad, enfocándonos en la
+                    satisfacción del cliente y su comodidad.
+                </p>
+            </div>
         </section>
-
         <section class="IndexCards">
             <div class="IndexCard">
                 <div class="CardImg">
                     <picture>
-                        <source srcset="./res/img/menu.jpg" media="(min-width: 1024px)" />
-                        <source srcset="./res/img/menu-tablet.jpg" media="(min-width: 710px)" />
-                        <source srcset="./res/img/menu-tablet-lg.jpg" media="(min-width: 500px)" />
-                        <img src="./res/img/menu.jpg" alt="Menú">                    
+                        <source srcset="./res/img/FotosConocenos/mobil/pareja-cayena.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./res/img/FotosConocenos/tablet/pareja-cayena-tablet.jpg"
+                            media="(min-width: 710px)" />
+                        <source srcset="./res/img/FotosConocenos/tablet-lg/pareja-cayena-tablet-lg.jpg"
+                            media="(min-width: 500px)" />
+                        <img src="./res/img/FotosConocenos/mobil/pareja-cayena.jpg" alt="Pareja">
                     </picture>
                 </div>
                 <div class="CardInfo">
                     <h3>Misión</h3>
-                    <p>Puedes empezar tu día con nuestros deliciosos aperitivos. Disfruta de nuestras especialidades con nuestras alitas y hamburguesas. Y para terminar tienes que probar nuestros postres.</p>
+                    <p>Nuestra misión es ofrecer a nuestros clientes una experiencia culinaria excepcional a través de
+                        nuestras deliciosas hamburguesas, alitas y aperitivos, preparados con ingredientes frescos y de
+                        alta calidad. Nos esforzamos por crear un ambiente acogedor y amigable donde las familias y
+                        amigos puedan disfrutar de momentos inolvidables, mientras nos comprometemos con un servicio
+                        al cliente impecable y una mejora continua en todos nuestros procesos.</p>
                 </div>
             </div>
             <div class="IndexCard">
                 <div class="CardImg">
                     <picture>
-                        <source srcset="./res/img/testimonios.jpg" media="(min-width: 1024px)" />
-                        <source srcset="./res/img/testimonios-tablet.jpg" media="(min-width: 710px)" />
-                        <source srcset="./res/img/testimonios-tablet-lg.jpg" media="(min-width: 500px)" />
-                        <img src="./res/img/testimonios.jpg" alt="Testimonios">                    
+                        <source srcset="./res/img/FotosConocenos/mobil/celular-cayena.jpg"
+                            media="(min-width: 1024px)" />
+                        <source srcset="./res/img/FotosConocenos/tablet/celular-cayena-tablet.jpg"
+                            media="(min-width: 710px)" />
+                        <source srcset="./res/img/FotosConocenos/tablet-lg/celular-cayena-tablet-lg.jpg"
+                            media="(min-width: 500px)" />
+                        <img src="./res/img/FotosConocenos/mobil/celular-cayena.jpg" alt="Celular">
                     </picture>
                 </div>
                 <div class="CardInfo">
                     <h3>Visión</h3>
-                    <p>Oye la palabra de nuestros clientes, incrementemos nuestra confianza. Pues aquí te servimos con calidad, asegurada.</p>
+                    <p>Nuestra visión es convertirnos en el restaurante líder en la región, reconocido por nuestra
+                        innovación y excelencia en el servicio de comida casual. Aspiramos a expandir nuestra presencia
+                        y a ser una marca sinónimo de calidad, sabor y satisfacción, mientras fomentamos un impacto
+                        positivo en nuestra comunidad y promovemos prácticas sostenibles en todas nuestras operaciones.
+                    </p>
                 </div>
             </div>
     </main>
-
     <footer class="Back-Black">
-
         <div class="footer-seccion1">
             <h2 class="Color-WhiteSmoke">Contáctanos</h2>
             <div class="footer-seccion2">
+              <a href="https://wa.me/50494518797" target="_blank">
                 <div class="footer-seccion3">
-                <img src="./res/iconos/telefono.png" alt="telefono">
-                    <div>
-                        <h3 class="Color-WhiteSmoke">Teléfono</h3>
-                        <p class="Color-WhiteSmoke">9451-8797</p>
-                    </div>
+                <img src="./res/iconos/whatsapp.svg" alt="telefono">
                 </div>
+              </a>
                 <a href="ubicacion.html">
                     <div class="footer-seccion3">
                         <img src="./res/iconos/ubicacion.png" alt="Ubicacion">
-                            <div>
-                                <h3 class="Color-WhiteSmoke">Ubicación</h3>
-                                <p class="Color-WhiteSmoke">Contiguo Inst. Enma Romero, Siguatepeque, Honduras</p>
-                            </div>
                         </div>
                 </a>
-                
             </div>
         </div>
-
         <div class="footer-seccion1">
             <h2 class="Color-WhiteSmoke redes">Síguenos</h2>
             <div class="footer-seccion2">
                 <div>
                     <a href="https://www.facebook.com/search/top?q=cayena%20hn&locale=hr_HR" target="_blank">
                         <img src="./res/iconos/facebook.png" alt="Facebook">
-                        <p class="Color-WhiteSmoke">Cayena HN</p>
                     </a>
                 </div>
                 <div>
                     <a href="https://www.instagram.com/cayenahn?igsh=MTcwdjk0MXoxbHpsZw==" target="_blank">
                         <img src="./res/iconos/instagram.png" alt="Instagram">
-                        <p class="Color-WhiteSmoke">Cayena HN</p>
                     </a>
                 </div>
             </div>
         </div>
-
     </footer>
-
     <aside>
         <div class="cargando">
             <img src="res/iconos/loading-azulOscuro.png" alt="Cargando">

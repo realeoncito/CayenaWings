@@ -39,11 +39,16 @@
 /* Colores de fondo con gradiantes */
 
 .Back-Black-Gradient{
-    background: linear-gradient(to right, var(--Black), #878787, var(--Black), var(--Black));
+    background: linear-gradient(to right, var(--Black), #ffff, var(--Black), var(--Black));
 }
 
 .Back-LightBlue-Gradient{
-    background: linear-gradient(to right, #ffff, #ffff, var(--Black), var(--Black));
+    background: linear-gradient(to right, #ffff, #ffff, #ffff,#ffff,var(--Black), var(--Black));
+}
+@media (min-width: 600px){
+    .Back-LightBlue-Gradient{
+        background: linear-gradient(to right, #ffff, #ffff, var(--Black), var(--Black));
+    }   
 }
 
 .Back-Salmon-Gradient{
@@ -55,7 +60,11 @@
 }
 
 .Back-Purple-Gradient{
-    background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Green));
+    background: linear-gradient(to right, var(--Purple) ,var(--Purple), var(--Black),var(--Black));
+}
+
+.Back-BlackWhite-Gradient{
+    background: linear-gradient(to right, var(--Black), var(--Purple), #878787, var(--Black));
 }
 
 /* Fondo con transparencia */
@@ -82,9 +91,8 @@
 }
 
 .Color-DarkBlue{
-    color: var(--Back-DarkBlue);
+    color: var(--DarkBlue);
 }
-
 
 .Color-Green{
     color: var(--Green);
@@ -94,3 +102,21 @@
     columns: var(--Purple);
 
 }
+.Color-Red{
+    color: #f03a3a;
+}
+
+/* Colores promociones */
+
+.Color-Orange{
+    color: #FFA500;
+}
+
+.Color-Gold{
+color: #FFD700;
+}
+
+.Color-Brown{
+color: #CD853F;
+}
+
