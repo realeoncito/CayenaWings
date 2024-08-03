@@ -1,9 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap);
 
 *{
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;}
+    text-decoration: none;
+    font-family: "Dosis",sans-serif;
+}
 
 .fullimage img{
     display: inline-block;
@@ -133,6 +136,9 @@ header nav input[id*="submenu"]:checked~label{
 
 .expandir{
     transition: transform ease-in-out 0.2s;
+    width: min-content;
+    height: min-content;
+    padding: 16px 0;
 }
 
 /* Dropdown menu */
