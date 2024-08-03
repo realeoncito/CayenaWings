@@ -84,20 +84,19 @@ body{
     position: absolute;
     z-index: 3;
     top: 160px;
-    left: 50px;
-    width: 120px;
+    left: 40px;
+    width: 140px;
     padding: 12px;
     text-align: center;
     box-sizing: border-box;
     color: black;
     border: 1px solid #aeaeae;
     border-radius: 4px;
-    font-style: italic;
 }
 
-@media(min-width: 1000px){
+@media(min-width: 1480px){
     .container-cards{
-        height: 80vh;
+        height: 45vh;
     }
     .heroPanel{
         height: 50vh;
