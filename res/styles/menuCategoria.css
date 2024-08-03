@@ -1,5 +1,5 @@
 .IndexMain{
-    background-image: url(./fondos/fondo-blanco.jpg);
+    background-image: url(../fondos/fondo-blanco.jpg);
     object-fit: cover;
     background-size: contain;
     /*
