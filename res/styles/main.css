@@ -95,7 +95,7 @@ header nav ul{
     height: 0px;
     overflow: hidden;
     z-index: 5000;
-    background-color: black;
+    background-color: transparent;
     transition: height 0.3s ease-in-out;
     position: inherit;
 }
@@ -104,6 +104,10 @@ header nav ul li{
     display: flex;
     border-top: gray 1px solid;
     height: max-content;
+}
+
+header nav ul li:nth-child(1){
+    border: none;
 }
 
 header nav ul li a,header nav ul li label{
