@@ -133,6 +133,9 @@ header nav input[id*="submenu"]:checked~label{
 
 .expandir{
     transition: transform ease-in-out 0.2s;
+    width: min-content;
+    height: min-content;
+    padding: 16px 0;
 }
 
 /* Dropdown menu */
