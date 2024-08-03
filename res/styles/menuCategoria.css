@@ -31,16 +31,15 @@
 }
 
 .card{
-    width: 400px;
+    width: 87vw;
     height: 210px;
     max-height: 210px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     background-color: black;
 }
 
 .content{
-    width: 225px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -103,6 +102,17 @@
 
     .content{
         width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card{
+        width: 87vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content{
+        width: unset;
     }
 }
 
