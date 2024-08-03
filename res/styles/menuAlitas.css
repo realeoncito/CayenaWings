@@ -1,6 +1,6 @@
 .container-alitas{
-    width: 100%;
     background-image: url(/res/fondos/fondo-blanco.jpg);
+    width: 100%;
     object-fit: cover;
     align-items: center;
 }
@@ -40,6 +40,9 @@
     font-size: 1.1rem;
     margin: 18px 0;
 }
+.cards .card-sauce{
+    display: flex;
+}
 .cards .price ol li, .cards .sauces ol li{
     display: flex;
     justify-content: space-evenly;
@@ -73,16 +76,37 @@
 .dulce{
     content: url(../iconos/dulce.jpg);
 }
-@media (min-width: 800px){
+@media (min-width: 700px){
     .container-alitas{
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-}
-@media (min-width: 1000px){
     .cards{
         width: 450px;
+    }
+    .cards .info h2{
+        font-size: 2.1rem;
+    }
+    .cards .info p, .cards .price ol li, .cards .sauces ol li{
+        font-size: 1.2rem;
+    }
+    .cards .sauces ol li{
+        width: 350px;
+    }
+}
+@media (min-width: 1200px){
+    .cards{
+        width: 500px;
+    }
+    .card-sauce{
+        width: 1090px;
+    }
+    .card-sauce .container-sauces{
+        display: flex;
+    }
+    .card-sauce .container-sauces .items-dulce{
+        margin-left: 70px;
     }
 }
