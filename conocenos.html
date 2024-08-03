@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./res/styles/main.css">
     <link rel="stylesheet" href="res/styles/colors.css">
-    <link rel="stylesheet" href="res/styles/conocenos.css">
     <link rel="stylesheet" href="res/styles/animaciones.css">
     <script src="js/animaciones.js"></script>
     <title>Conocenos</title>
 </head>
+
 <body>
     <header class="Back-BlackWhite-Gradient">
         <nav>
             <a href="index.html">
-                <img class="logo" src="res/logos/logo-morado.png" alt="Logo Cayena Azul Oscuro"/>
+                <img class="logo" src="res/logos/logo-morado.png" alt="Logo Cayena Azul Oscuro" />
                 <h1 class="Color-WhiteSmoke">Cayena Wings</h1>
             </a>
             <input id="hamburguesa" type="checkbox">
@@ -25,24 +25,24 @@
                     <div class="dropdown">
                         <a class="dropbtn HeaderAcerca Color-WhiteSmoke">Menú</a>
                         <div class="dropdown-content">
-                          <a href="Menu/AddOns.html">Acompañamientos</a>
-                          <a href="Menu/Alitas.html">Alitas</a>
-                          <a href="Menu/Bebidas.html">Bebidas</a>
-                          <a href="Menu/Cocteles.html">Cocteles</a>
-                          <a href="Menu/Hamburguesas.html">Hamburguesas</a>
-                          <a href="Menu/Platillos.html">Platillos</a>
+                            <a href="Menu/AddOns.html">Acompañamientos</a>
+                            <a href="Menu/Alitas.html">Alitas</a>
+                            <a href="Menu/Bebidas.html">Bebidas</a>
+                            <a href="Menu/Cocteles.html">Cocteles</a>
+                            <a href="Menu/Hamburguesas.html">Hamburguesas</a>
+                            <a href="Menu/Platillos.html">Platillos</a>
                         </div>
-                      </div>
+                    </div>
 
-                      <input type="checkbox" id="submenu-menu">
-                  <label class="expandir hide" for="submenu-menu">></label>
+                    <input type="checkbox" id="submenu-menu">
+                    <label class="expandir hide" for="submenu-menu">></label>
                     <ul class="submenu hide">
-                      <li><a href="Menu/AddOns.html" class="Color-WhiteSmoke">Acompañamientos</a></li>
-                      <li><a href="Menu/Alitas.html" class="Color-WhiteSmoke">Alitas</a></li>
-                      <li><a href="Menu/Bebidas.html" class="Color-WhiteSmoke">Bebidas</a></li>
-                      <li><a href="Menu/Cocteles.html" class="Color-WhiteSmoke">Cocteles</a></li>
-                      <li><a href="Menu/Hamburguesas.html" class="Color-WhiteSmoke">Hamburguesas</a></li>
-                      <li><a href="Menu/Platillos.html" class="Color-WhiteSmoke">Platillos</a></li>
+                        <li><a href="Menu/AddOns.html" class="Color-WhiteSmoke">Acompañamientos</a></li>
+                        <li><a href="Menu/Alitas.html" class="Color-WhiteSmoke">Alitas</a></li>
+                        <li><a href="Menu/Bebidas.html" class="Color-WhiteSmoke">Bebidas</a></li>
+                        <li><a href="Menu/Cocteles.html" class="Color-WhiteSmoke">Cocteles</a></li>
+                        <li><a href="Menu/Hamburguesas.html" class="Color-WhiteSmoke">Hamburguesas</a></li>
+                        <li><a href="Menu/Platillos.html" class="Color-WhiteSmoke">Platillos</a></li>
                     </ul>
 
                 </li>
@@ -51,40 +51,49 @@
                     <div class="dropdown">
                         <a class="dropbtn HeaderAcerca Color-WhiteSmoke">Acerca de Nosotros</a>
                         <div class="dropdown-content">
-                          <a href="conocenos.html">Conocenos</a>
-                          <a href="contactanos.html">Contatctanos</a>
-                          <a href="ubicacion.html">Ubicación</a>
+                            <a href="conocenos.html">Conocenos</a>
+                            <a href="contactanos.html">Contatctanos</a>
+                            <a href="ubicacion.html">Ubicación</a>
                         </div>
                     </div>
 
                     <input type="checkbox" id="submenu-acerca">
-                  <label class="expandir hide" for="submenu-acerca">></label>
+                    <label class="expandir hide" for="submenu-acerca">></label>
                     <ul class="submenu hide">
                         <li><a href="conocenos.html" class="Color-WhiteSmoke">Conocenos</a></li>
                         <li><a href="ubicacion.html" class="Color-WhiteSmoke">Ubicación</a></li>
                         <li><a href="contactanos.html" class="Color-WhiteSmoke">Contáctanos</a></li>
                     </ul>
-                </li> 
+                </li>
             </ul>
             <div class="menu_hamburguesa">
                 <label for="hamburguesa">
-                  <img for="hamburguesa" src="./res/iconos/menu_hamburguesa.png" alt="Menú" />
+                    <img for="hamburguesa" src="./res/iconos/menu_hamburguesa.png" alt="Menú" />
                 </label>
-              </div>
+            </div>
         </nav>
     </header>
-    <main class="ConocenosMain">
-        <section class="hero-content">
-            <div class="Container">
-                <img src="./res/img/FotosConocenos/hero-banner.png" alt="fondo morado y azul" />
-                <div class="Contenido FondoMorado">
-                    <h2>Quienes Somos</h2>
-                    <p>"Deliciosas, adictivas, incomparables. Una experiencia altamente recomendable. No solo ofrecen las
-                        mejores alitas sino que también cuentan con un ambiente muy acogedor. La realación calidad-precio es
-                        excelente."
-                    </p>
-                    </div>
-                </div>
+    <main class="IndexMain">
+        <section class="heroBanner">
+
+            <picture>
+                <source srcset="./res/img/FotosConocenos/tablet-lg/fondo-conocenos-lg.jpg"
+                    media="(min-width: 1024px)" />
+                <source srcset="res/img/FotosConocenos/tablet/fondo-conocenos-tablet.jpg" media="(min-width: 1024px)" />
+
+                <img src="res/img/FotosConocenos/mobil/fondo-conocenos-mobil.jpg" alt="Hamburguesa Cayena" />
+
+            </picture>
+
+            <div class="heroBannerInfo FondoBlanco">
+                
+                <h2>¿Quiénes Somos?</h2>
+                <p class="Color-Black FondoBlanco">
+                    Cayena Wings es una empresa 100% hondureña que nace en el corazón del país, el
+                    altiplano central de Honduras; Siguatepeque. <br/>
+                    Nos caracterizamos por dar una atención de la más alta calidad, enfocándonos en la
+                    satisfacción del cliente y su comodidad.
+                </p>
             </div>
         </section>
         <section class="IndexCards">
@@ -103,7 +112,7 @@
                     <h3>Misión</h3>
                     <p>Nuestra misión es ofrecer a nuestros clientes una experiencia culinaria excepcional a través de
                         nuestras deliciosas hamburguesas, alitas y aperitivos, preparados con ingredientes frescos y de
-                        alta calidad. Nos esforzamos por crear un ambiente acogedor y amigable donde las familias y 
+                        alta calidad. Nos esforzamos por crear un ambiente acogedor y amigable donde las familias y
                         amigos puedan disfrutar de momentos inolvidables, mientras nos comprometemos con un servicio
                         al cliente impecable y una mejora continua en todos nuestros procesos.</p>
                 </div>
@@ -122,10 +131,11 @@
                 </div>
                 <div class="CardInfo">
                     <h3>Visión</h3>
-                    <p>Nuestra visión es convertirnos en el restaurante líder en la región, reconocido por nuestra 
+                    <p>Nuestra visión es convertirnos en el restaurante líder en la región, reconocido por nuestra
                         innovación y excelencia en el servicio de comida casual. Aspiramos a expandir nuestra presencia
                         y a ser una marca sinónimo de calidad, sabor y satisfacción, mientras fomentamos un impacto
-                        positivo en nuestra comunidad y promovemos prácticas sostenibles en todas nuestras operaciones.</p>
+                        positivo en nuestra comunidad y promovemos prácticas sostenibles en todas nuestras operaciones.
+                    </p>
                 </div>
             </div>
     </main>
@@ -134,7 +144,7 @@
             <h2 class="Color-WhiteSmoke">Contáctanos</h2>
             <div class="footer-seccion2">
                 <div class="footer-seccion3">
-                <img src="./res/iconos/telefono.png" alt="telefono">
+                    <img src="./res/iconos/telefono.png" alt="telefono">
                     <div>
                         <h3 class="Color-WhiteSmoke">Teléfono</h3>
                         <p class="Color-WhiteSmoke">9451-8797</p>
@@ -143,11 +153,11 @@
                 <a href="ubicacion.html">
                     <div class="footer-seccion3">
                         <img src="./res/iconos/ubicacion.png" alt="Ubicacion">
-                            <div>
-                                <h3 class="Color-WhiteSmoke">Ubicación</h3>
-                                <p class="Color-WhiteSmoke">Contiguo Inst. Enma Romero, Siguatepeque, Honduras</p>
-                            </div>
+                        <div>
+                            <h3 class="Color-WhiteSmoke">Ubicación</h3>
+                            <p class="Color-WhiteSmoke">Contiguo Inst. Enma Romero, Siguatepeque, Honduras</p>
                         </div>
+                    </div>
                 </a>
             </div>
         </div>
