@@ -1,6 +1,11 @@
 .IndexMain{
+    background-image: url(/res/fondos/fondo-blanco.jpg);
+    object-fit: cover;
+    background-size: contain;
+    /*
     background-image: none;
     background-color: #EAE8DF;
+    */
 }
 
 .maincontainer{
@@ -96,6 +101,12 @@
 
 .footerborder{
     border-top: 2px solid white;
+}
+
+@media(min-width: 1300px){
+    .fullView{
+        height: 90vh;
+    }
 }
 
 @media (min-width: 600px){
