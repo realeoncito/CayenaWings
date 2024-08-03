@@ -139,6 +139,14 @@ button:hover {
     background-color: #c4e502;
 }
 
+.dropbtn{
+    font-weight: lighter;
+}
+
+.dropbtn:hover{
+    background-color: transparent;
+}
+
 .hamburger-menu {
     display: none;
     flex-direction: column;
