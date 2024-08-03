@@ -86,8 +86,9 @@
 }
 
 .Color-DarkBlue{
-    color: var(--Back-DarkBlue);
+    color: var(--DarkBlue);
 }
+
 .Color-Green{
     color: var(--Green);
 }
