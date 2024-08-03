@@ -30,51 +30,13 @@ let carousel = () => {
         currentIndex = 0;
         items = document.querySelectorAll(".carouselItem");
         totalItems = items.length;
-        /*
-        console.log(carouselContainer);
-        console.log(carousel);
-        console.log(items);
-        console.log(totalItems);
-        */
-
         startCarousel();
-
-        //Inicializacion de los componentes hasta que 
-
     }
 
     function startCarousel() {
-        //addNavigator();
         tick();
     }
-    /*
-    function addNavigator() {
-        const navigator = document.createElement('div');
-        navigator.classList.add('carousel-navigator');
-        for (let i = 0; i < totalItems; i++) {
-            const dot = document.createElement('div');
-            dot.classList.add('carousel-navigator-dot');
-            if (i === 0) {
-                dot.classList.add('active');
-            }
-            dot.addEventListener('click', (e) => {
-                moveSegmentToIndex(i);
-            });
-            navigator.appendChild(dot);
-        }
 
-        carouselContainer.appendChild(navigator);
-    }
-
-    function setDotAsActive(index) {
-        const dots = carouselContainer.querySelectorAll('.carousel-navigator-dot');
-        dots.forEach(dot => {
-            dot.classList.remove('active');
-        });
-        //console.log(dots[index]);
-        dots[index].classList.add('active');
-    }
-*/
     function moveSegmentToIndex() {
 
         clearTimeout(timeOutID);
@@ -85,10 +47,7 @@ let carousel = () => {
         carousel.style.transition = 'none';
         carousel.style.transform = 'translateX(0px)';
         currentIndex = (currentIndex + 1) % totalItems;
-       // setDotAsActive(currentIndex);
         tick();
-
-
     }
 
     function tick() {
@@ -99,10 +58,7 @@ let carousel = () => {
                 
                 moveSegmentToIndex();
             }, 1000);
-            //tick();
         }, 4000);
     }
-
     init();
-
 }

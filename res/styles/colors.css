@@ -39,11 +39,16 @@
 /* Colores de fondo con gradiantes */
 
 .Back-Black-Gradient{
-    background: linear-gradient(to right, var(--Black), #878787, var(--Black), var(--Black));
+    background: linear-gradient(to right, var(--Black), #ffff, var(--Black), var(--Black));
 }
 
 .Back-LightBlue-Gradient{
-    background: linear-gradient(to right, #ffff, #ffff, var(--Black), var(--Black));
+    background: linear-gradient(to right, #ffff, #ffff, #ffff,#ffff,var(--Black), var(--Black));
+}
+@media (min-width: 600px){
+    .Back-LightBlue-Gradient{
+        background: linear-gradient(to right, #ffff, #ffff, var(--Black), var(--Black));
+    }   
 }
 
 .Back-Salmon-Gradient{
@@ -114,3 +119,4 @@ color: #FFD700;
 .Color-Brown{
 color: #CD853F;
 }
+
