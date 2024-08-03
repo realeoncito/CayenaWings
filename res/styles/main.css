@@ -444,10 +444,6 @@ footer{
     justify-content: space-around;
 }
 
-.footer-seccion2 h3,.footer-seccion2 p{
-    display: none;
-}
-
 .footer-seccion3{
     display: flex;
     flex-flow: column wrap;
@@ -460,7 +456,7 @@ footer{
 
 @media (min-width: 710px) {
 
-    .footer-seccion2 h3, p{
+    .footer-seccion2 h3, .footer-seccion2 p{
         display: flex;
         flex-flow: wrap;
         align-items: center;
@@ -469,15 +465,10 @@ footer{
 
     .CardContainer{
         flex-direction: row;
-    }
-
-    .redes::after{        
-        content: " en Nuestras Redes Sociales";
-    }
-    
+    }    
 }
 
-@media (min-width:1024px) {
+@media (min-width:1040px) {
     .hide{
         display: none;
     }
